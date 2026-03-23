@@ -190,7 +190,7 @@ const Page = () => {
         files: imageUrls.join(' ')
       };
       console.log('Email params:', templateParams);
-      emailjs.send('service_o7pozcc', 'template_gnnit8n', templateParams)
+      emailjs.send('service_iy4twy9', 'template_gnnit8n', templateParams)
         .then(function(response) {
           console.log('Email sent successfully:', response);
           setSuccess(true);
