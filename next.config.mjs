@@ -4,15 +4,15 @@ const nextConfig = {
     return [
       {
         source: '/blog',
-        destination: 'https://renua-one.ghost.io/blog/',
+        destination: 'https://renua-one.ghost.io/',
       },
       {
         source: '/blog/:path*/',
-        destination: 'https://renua-one.ghost.io/blog/:path*/',
+        destination: 'https://renua-one.ghost.io/',
       },
       {
         source: '/blog/:path*',
-        destination: 'https://renua-one.ghost.io/blog/:path*',
+        destination: 'https://renua-one.ghost.io/',
       }
     ];
   },
@@ -20,7 +20,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/blog/:path*',
+        source: '/blog',
         headers: [
           {
             key: 'X-Forwarded-Host',
