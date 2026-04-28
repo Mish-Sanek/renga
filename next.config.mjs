@@ -1,22 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Ваши существующие настройки (если были)
-  
-  // НАСТРОЙКА PROXY ДЛЯ /blog
   async rewrites() {
     return [
       {
         source: '/blog',
-        destination: 'https://renua-one.ghost.io/',
+        destination: 'https://renua-one.ghost.io/blog/',
+      },
+      {
+        source: '/blog/:path*',
+        destination: 'https://renua-one.ghost.io/blog/:path*',
       },
     ];
   },
 
-  // ВАЖНО: Добавляем заголовки для Ghost
   async headers() {
     return [
       {
-        source: '/blog/',
+        source: '/blog/:path*',
         headers: [
           {
             key: 'X-Forwarded-Host',
@@ -25,6 +25,10 @@ const nextConfig = {
           {
             key: 'X-Forwarded-Proto',
             value: 'https',
+          },
+          {
+            key: 'X-Forwarded-For',
+            value: req?.ip || '', // Vercel подставит IP автоматически
           },
         ],
       },
