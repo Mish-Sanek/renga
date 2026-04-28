@@ -26,14 +26,12 @@ const nextConfig = {
             key: 'X-Forwarded-Proto',
             value: 'https',
           },
-          {
-            key: 'X-Forwarded-For',
-            value: req?.ip || '', // Vercel подставит IP автоматически
-          },
         ],
       },
     ];
   },
 };
+
+export default nextConfig;};
 
 export default nextConfig;
