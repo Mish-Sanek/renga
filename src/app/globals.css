@@ -231,6 +231,7 @@
 }
 
 .page-footer__links li {
+  width: 200px;
   font-weight: 500;
 }
 

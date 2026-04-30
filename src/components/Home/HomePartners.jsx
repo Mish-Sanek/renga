@@ -22,9 +22,7 @@ const HomePartners = () => {
     <div className="partners marquee-container">
       <div className="marquee marquee-grid">
         {partners.map((src, idx) => (
-          <div key={idx} className="marquee__item">
-            <Image src={src} alt="" />
-          </div>
+          <Image src={src} key={idx} alt="" className="marquee__item" />
         ))}
       </div>
 
@@ -32,9 +30,7 @@ const HomePartners = () => {
         <div className="marquee-slider">
           <div className="marquee-slider-track">
             {[...partners, ...partners].map((src, idx) => (
-              <div key={idx} className="marquee-slider__item">
-                <Image src={src} alt="" />
-              </div>
+              <Image src={src} key={idx} className="marquee-slider__item" alt="" />
             ))}
           </div>
         </div>
