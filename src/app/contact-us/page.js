@@ -28,7 +28,7 @@ const services = [
 const Page = () => {
   const formRef = useRef();
   const fileInputRef = useRef(null);
-  
+
   const [selectedServices, setSelectedServices] = useState([]);
   const [files, setFiles] = useState([]);
   const [compressedFiles, setCompressedFiles] = useState([]);
@@ -36,11 +36,11 @@ const Page = () => {
   const [imageUrls, setUrls] = useState([]);
   const [attachmentsCount, setAttachmentsCount] = useState(0);
   const [isWithoutImage, setWithoutImage] = useState(false);
-  
+
   const [isLoading, setLoading] = useState(false);
   const [isSuccess, setSuccess] = useState(false);
   const [isFail, setFail] = useState(false);
-  
+
   const [client, setClient] = useState({
     from_name: '',
     email: '',
@@ -338,13 +338,13 @@ const Page = () => {
   // Отправка в Slack
   useEffect(() => {
     const sendToSlack = async () => {
-      console.log('sendToSlack called', { 
-        imageUrls: imageUrls.length, 
-        isCompressed, 
+      console.log('sendToSlack called', {
+        imageUrls: imageUrls.length,
+        isCompressed,
         compressedFiles: compressedFiles.length,
-        isWithoutImage 
+        isWithoutImage
       });
-      
+
       if (imageUrls.length > 0 && isCompressed && imageUrls.length === compressedFiles.length) {
         console.log('Sending to Slack with images');
         const imageUrlsValues = imageUrls.map((item, index) => {
@@ -399,7 +399,7 @@ const Page = () => {
             withCredentials: false,
             transformRequest: [(data) => data],
           });
-          
+
           if (response.status === 200) {
             setSuccess(true);
             setTimeout(() => {
@@ -423,7 +423,7 @@ const Page = () => {
             formRef.current?.reset();
           }, 3000);
         }
-        
+
         setLoading(false);
         setCompressedFiles([]);
         setAttachmentsCount(0);
@@ -471,7 +471,7 @@ const Page = () => {
             withCredentials: false,
             transformRequest: [(data) => data],
           });
-          
+
           if (response.status === 200) {
             setSuccess(true);
             setTimeout(() => {
@@ -495,7 +495,7 @@ const Page = () => {
             formRef.current?.reset();
           }, 3000);
         }
-        
+
         setLoading(false);
         setWithoutImage(false);
         setAttachmentsCount(0);
@@ -514,7 +514,6 @@ const Page = () => {
 
   return (
     <>
-      <PageHeader />
       <article className="contact-us">
       <div className="contact-us__container">
         <h1 className="contact-us__title">Write to Renua</h1>

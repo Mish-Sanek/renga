@@ -1,13 +1,12 @@
-import PageFooter from "@/components/PageFooter";
-import PageHeader from "@/components/PageHeader";
-import PageInfo from "@/components/PageInfo";
+import "./home.css"
+import HomeContent from "@/components/Home/HomeContent";
+import PageFooterBig from "@/components/PageFooterBig";
 
 export default function Home() {
   return (
     <>
-      <PageHeader />
-      <PageInfo />
-      <PageFooter />
+      <HomeContent />
+      <PageFooterBig />
     </>
   );
 }

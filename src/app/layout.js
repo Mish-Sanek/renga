@@ -1,7 +1,5 @@
-
 import "./globals.css";
-import { GoogleAnalytics } from '@next/third-parties/google';
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata = {
@@ -9,14 +7,21 @@ export const metadata = {
     default: "Renua - Creative Agency",
     template: "%s | Renua",
   },
-  description: "Renua - shaping brands and digital experiences through motion, design, and storytelling.",
-  keywords: ["creative agency", "motion design", "branding", "digital storytelling"],
+  description:
+    "Renua - shaping brands and digital experiences through motion, design, and storytelling.",
+  keywords: [
+    "creative agency",
+    "motion design",
+    "branding",
+    "digital storytelling",
+  ],
   authors: [{ name: "Renua Team", url: "https://renua.com" }],
   creator: "Renua Creative Agency",
   publisher: "Renua",
   openGraph: {
     title: "Renua - Creative Agency",
-    description: "Shaping brands and digital experiences through motion and design.",
+    description:
+      "Shaping brands and digital experiences through motion and design.",
     url: "https://renua.com",
     siteName: "Renua",
     images: [
@@ -33,7 +38,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Renua - Creative Agency",
-    description: "Shaping brands and digital experiences through motion and design.",
+    description:
+      "Shaping brands and digital experiences through motion and design.",
     images: ["/Renua_Preview.png"],
     creator: "@renua",
   },
@@ -60,7 +66,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="app">
-        <PageHeader />
+          <PageHeader />
           {children}
         </div>
       </body>
