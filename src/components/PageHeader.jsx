@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import logo from "@/app/img/logo.svg";
-import logoShort from "@/app/img/logo-short.svg";
 import Link from "next/link";
 
 const PageHeader = () => {
@@ -12,8 +10,8 @@ const PageHeader = () => {
     <header className={`page-header ${isOpen ? "opened" : ""}`}>
       <Link href="/" className="page-header__logo">
         <picture>
-          <source srcSet={logoShort.src} media="(max-width: 767px)" />
-          <img src={logo.src} alt="RENUA logo" />
+          <source srcSet="img/logo-short.svg" media="(max-width: 767px)" />
+          <img src="img/logo.svg" alt="RENUA logo" />
         </picture>
       </Link>
 
