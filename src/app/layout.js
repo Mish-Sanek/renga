@@ -1,6 +1,7 @@
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import PageHeader from "@/components/PageHeader";
+import PageFooterBig from "@/components/PageFooterBig";
 
 export const metadata = {
   title: {
@@ -68,6 +69,7 @@ export default function RootLayout({ children }) {
         <div className="app">
           <PageHeader />
           {children}
+          <PageFooterBig />
         </div>
       </body>
       <GoogleAnalytics gaId="G-54E24VX7E5" />

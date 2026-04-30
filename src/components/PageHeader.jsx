@@ -2,8 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const links = [
+  { name: "Work", url: "works" },
+  { name: "Services", url: "services" },
+  { name: "Clients", url: "clients" },
+  { name: "About", url: "about" },
+];
 
 const PageHeader = () => {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -16,18 +25,24 @@ const PageHeader = () => {
       </Link>
 
       <nav className="page-header__nav">
-        <a href="">
-          Work
-        </a>
-        <a href="">Services</a>
-        <a href="">Clients</a>
-        <a href="">About</a>
+        {links.map((link) => (
+          <Link
+            className={pathname.includes(link.url) ? "active" : ""}
+            href={link.url}
+            key={link.url}
+          >
+            {link.name}
+          </Link>
+        ))}
       </nav>
 
       <Link href="contact-us" className="page-header__contact">
         Get in touch
       </Link>
-      <button className="page-header__open-nav" onClick={() => setIsOpen(!isOpen)}></button>
+      <button
+        className="page-header__open-nav"
+        onClick={() => setIsOpen(!isOpen)}
+      ></button>
     </header>
   );
 };
