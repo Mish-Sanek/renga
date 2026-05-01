@@ -61,16 +61,16 @@ const PageFooterBig = () => {
           <a href="mailto:hey@renua.one" className="mail">
             hey@renua.one
           </a>
-          <a href="" className="linkedin">
+          <a href="https://www.linkedin.com/company/renua_one" target="_blank" rel="noopener noreferrer" className="linkedin">
             LinkedIn
           </a>
-          <a href="" className="inst">
+          <a href="https://www.instagram.com/renua.one" target="_blank" rel="noopener noreferrer" className="inst">
             Instagram
           </a>
-          <a href="" className="clutch">
+          <a href="https://clutch.co/profile/renua" target="_blank" rel="noopener noreferrer" className="clutch">
             Clutch
           </a>
-          <a href="" className="behance">
+          <a href="https://www.behance.net/renua_one" target="_blank" rel="noopener noreferrer" className="behance">
             Behance
           </a>
         </nav>
