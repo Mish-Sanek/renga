@@ -4,14 +4,14 @@
 
 .works-content__title {
   font-weight: 600;
-  font-size: 34px;
+  font-size: 56px;
 }
 
 .works-content__descr {
   max-width: 100%;
-  width: 613px;
+  width: 830px;
   margin-top: 48px;
-  font-size: 34px;
+  font-size: 48px;
 }
 
 .works-content__tabs {
@@ -117,12 +117,12 @@ transform: scale3d(1,1,1);
   }
 
   .works-content__title {
-    font-size: 28px;
+    font-size: 36px;
   }
 
   .works-content__descr {
     margin-top: 24px;
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .works-content__tabs {

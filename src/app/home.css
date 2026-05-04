@@ -24,7 +24,7 @@
 /* hero */
 
 .hero__title {
-  font-size: 34px;
+  font-size: 48px;
 }
 
 .hero__video {
@@ -32,13 +32,19 @@
   margin-top: 48px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .hero__title {
-    font-size: 28px;
+    max-width: 613px;
   }
 
   .hero__title br {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero__title {
+    font-size: 32px;
   }
 
   .hero__video {

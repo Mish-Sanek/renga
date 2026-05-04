@@ -8,9 +8,13 @@ const HomeHero = () => {
         experiences for ambitious teams.
       </h1>
       <video
-        src={null}
+        src="/videos/Tama.webm"
         className="hero__video"
         poster={poster.src}
+        autoPlay
+        muted
+        loop
+        playsInline
       />
     </section>
   );
