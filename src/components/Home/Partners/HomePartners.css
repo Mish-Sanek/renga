@@ -1,0 +1,58 @@
+/* partners  */
+
+.marquee {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.marquee__item {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.marquee-slider-wrapper {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .marquee {
+    display: none;
+  }
+
+  .marquee-slider-wrapper {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .marquee-slider {
+    display: flex;
+    width: fit-content;
+  }
+
+  .marquee-slider-track {
+    display: flex;
+    animation: scrollMobile 15s linear infinite;
+    flex-shrink: 0;
+  }
+
+  .marquee-slider__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 200px;
+  }
+
+  @keyframes scrollMobile {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50% - 17.5px));
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/* services contact */
+
+.lets-build {
+  padding: 60px 36px;
+  background-color: #D7F9FF;
+}
+
+.lets-build__title {
+  max-width: 845px;
+  font-weight: 500;
+  font-size: 62px;
+}
+
+.lets-build__descr {
+  margin-top: 36px;
+  font-size: 24px;
+}
+
+.lets-build__link {
+  display: inline-block;
+  padding: 16px 30px;
+  margin-top: 36px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #0D0D0D;
+  border-radius: 30px;
+}
