@@ -24,6 +24,34 @@
   margin-top: 96px;
 }
 
+@media (max-width: 1199px) {
+  .services-content {
+    gap: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-content {
+    padding: 155px 20px 72px;
+    gap: 72px;
+  }
+
+  .services-content__title {
+    font-size: 36px;
+  }
+
+  .services-content__descr {
+    margin-top: 24px;
+    font-size: 32px;
+  }
+
+  .services-content__top-video {
+    width: calc(100% + 40px);
+    margin-top: 36px;
+    margin-left: -20px;
+  }
+}
+
 
 
 
@@ -79,6 +107,40 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .services-features {
+    gap: 20px;
+  }
+
+  .services-features__sticky {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-features {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .services-features__sticky {
+    font-size: 20px;
+  }
+
+  .services-features__list {
+    padding-top: 0;
+    gap: 72px;
+  }
+
+  .services-features__item-title {font-size: 24px;}
+
+  .services-features__item-descr,
+  .services-features__sublist {
+    margin-top: 28px;
+  }
+
+}
+
 
 
 
@@ -129,6 +191,46 @@
   font-size: 1.25vw;
 }
 
+@media (max-width: 1199px) {
+  .services-process__list-item {
+    aspect-ratio: 290/400;
+    padding: 36px;
+  }
+
+  .services-process__list-item b {
+    font-size: 32px;
+  }
+
+  .services-process__list-item p {
+    font-size: 20px;
+  }
+
+  .services-process__list-item:after {
+    padding: 6px 8px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-process__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-process__list-item {
+    aspect-ratio: 350/260;
+    padding: 20px;
+  }
+
+  .services-process__list-item b {
+    font-size: 28px;
+  }
+
+  .services-process__list-item p {
+    margin-top: 16px;
+  }
+}
+
 
 
 
@@ -155,4 +257,22 @@
   margin-top: 96px;
   font-weight: 600;
   font-size: 62px;
+}
+
+
+@media (max-width: 767px) {
+  .services-industries__title {
+    padding-bottom: 24px;
+    font-size: 24px;
+  }
+
+  .services-industries__descr {
+    margin-top: 24px;
+    font-size: 20px;
+  }
+
+  .services-industries__text {
+    margin-top: 60px;
+    font-size: 48px;
+  }
 }

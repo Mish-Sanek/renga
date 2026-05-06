@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -14,6 +14,8 @@ const links = [
 const PageHeader = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+
+  const closeMenu = () => setIsOpen(false)
 
   return (
     <header className={`page-header ${isOpen ? "opened" : ""}`}>
@@ -30,6 +32,7 @@ const PageHeader = () => {
             className={pathname.includes(link.url) ? "active" : ""}
             href={link.url}
             key={link.url}
+            onClick={closeMenu}
           >
             {link.name}
           </Link>
