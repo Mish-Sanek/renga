@@ -1,9 +1,10 @@
 import React from "react";
+import BorderedTitle from "../BorderedTitle/BorderedTitle";
 
 const HomeAboutSecondary = () => {
   return (
     <section className="about-secondary">
-      <h2 className="about-secondary__title">Who we are</h2>
+      <BorderedTitle>Who we are</BorderedTitle>
       <h3 className="about-secondary__text">
         Renua is a digital design studio helping ambitious companies create
         brands, products and digital experiences that stand out and scale.

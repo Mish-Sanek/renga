@@ -5,6 +5,7 @@ import HomePartners from "@/components/Home/Partners/HomePartners";
 import TestimonialsSlider from "@/components/Sliders/TestimonialsSlider";
 import { testimonialsList } from "@/lib/reviews";
 import LetsBuild from "@/components/LetsBuild/LetsBuild";
+import BorderedTitle from "@/components/BorderedTitle/BorderedTitle";
 
 const collaborationsList = [
   {
@@ -131,15 +132,10 @@ const page = () => {
 
       <TestimonialsSlider testimonials={testimonialsList} />
 
-      <section className="clients-block">
-        <h2 className="clients-block__title">Selected collaborations</h2>
-
-      </section>
-
       <LetsBuild />
 
       <section className="clients-collaborations">
-        <h2 className="clients-collaborations__title">Selected collaborations</h2>
+        <BorderedTitle>Selected collaborations</BorderedTitle>
         <ul className="clients-collaborations__list">
           {
             collaborationsList.map((company, index) => (
@@ -153,7 +149,8 @@ const page = () => {
       </section>
 
       <section className="clients-industries">
-        <h2 className="clients-industries__title">Industries</h2>
+
+        <BorderedTitle>Industries</BorderedTitle>
         <b>We work with teams across fintech, SaaS, AI and emerging technologies.</b>
       </section>
     </main>

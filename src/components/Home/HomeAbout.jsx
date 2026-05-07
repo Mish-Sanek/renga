@@ -1,9 +1,10 @@
 import React from "react";
+import BorderedTitle from "../BorderedTitle/BorderedTitle";
 
 const HomeAbout = () => {
   return (
     <section className="about">
-      <h2 className="about__title">What we do</h2>
+      <BorderedTitle>What we do</BorderedTitle>
       <div className="about__info">
         <p>
           We create brands, products and websites built for launch,

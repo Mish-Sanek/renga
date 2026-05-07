@@ -20,6 +20,7 @@ import LetsBuild from "@/components/LetsBuild/LetsBuild";
 
 import freedomPoster from "@/app/img/home/works/freedom-poster.jpg"
 import { testimonialsList } from "@/lib/reviews";
+import BorderedTitle from "@/components/BorderedTitle/BorderedTitle";
 
 const partners = [
   huawei,
@@ -47,7 +48,7 @@ const page = () => {
       </section>
 
       <section className="about-studio">
-        <h2 className="about-studio__title">Studio</h2>
+        <BorderedTitle>Studio</BorderedTitle>
         <div className="about-studio__info">
           <p>
             We work with startups and digital companies — from early concepts to
@@ -59,7 +60,7 @@ const page = () => {
       </section>
 
       <section className="about-facts">
-        <h2 className="about-facts__title">Facts</h2>
+        <BorderedTitle>Facts</BorderedTitle>
         <ul className="about-facts__list">
           <li className="about-facts__item">
             <b>23</b>
@@ -96,7 +97,7 @@ const page = () => {
       </ul>
 
       <section className="about-team">
-        <h2 className="about-team__title">Team</h2>
+        <BorderedTitle>Team</BorderedTitle>
         <div className="about-team__info">
           <p className="about-team__descr">
             A distributed team working across branding, product and digital
@@ -117,7 +118,7 @@ const page = () => {
       <LetsBuild />
 
       <section className="about-projects">
-        <h2 className="about-projects__title">Last Project</h2>
+        <BorderedTitle>Last Project</BorderedTitle>
         <nav className="about-projects__list">
           <Link href='#' className="about-projects__item about-projects__item--small">
             <div className="about-projects__item-info" style={{ '--info-color': '#8CE85F' }}>

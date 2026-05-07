@@ -1,6 +1,7 @@
 import "./services.css";
 
 import vidPoster from "@/app/img/services/top-poster.jpg";
+import BorderedTitle from "@/components/BorderedTitle/BorderedTitle";
 import LetsBuild from "@/components/LetsBuild/LetsBuild";
 
 const page = () => {
@@ -74,7 +75,7 @@ const page = () => {
       </section>
 
       <section className="services-process">
-        <h2 className="services-process__title">Process</h2>
+        <BorderedTitle>Process</BorderedTitle>
         <ul className="services-process__list">
           <li className="services-process__list-item" after="01">
             <b>Direction</b>
@@ -94,7 +95,7 @@ const page = () => {
       <LetsBuild />
 
       <section className="services-industries">
-        <h2 className="services-industries__title">Industries</h2>
+        <BorderedTitle>Industries</BorderedTitle>
         <p className="services-industries__descr">We work with teams building the <br/> future of digital products.</p>
         <b className="services-industries__text">Fintech, SaaS, Ecommerce, AI & Technology, Startups.</b>
       </section>

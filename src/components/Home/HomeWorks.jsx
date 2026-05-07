@@ -8,11 +8,12 @@ import nvo from "@/app/img/home/works/nvo.jpg"
 import freedomCard from "@/app/img/home/works/freedom-card.jpg"
 import looksrare from "@/app/img/home/works/looksrare.jpg"
 import nobleblocks from "@/app/img/home/works/nobleblocks.jpg"
+import BorderedTitle from "../BorderedTitle/BorderedTitle";
 
 const HomeWorks = () => {
   return (
     <section className="works">
-      <h2 className="works__title">Selected work</h2>
+      <BorderedTitle>Selected work</BorderedTitle>
 
       <div className="works__list">
         <div className="works__list-item">
