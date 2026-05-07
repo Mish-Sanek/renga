@@ -82,6 +82,10 @@
   .slider-track {
     width: calc(100% - 95px);
   }
+
+  .testimonial-card__text {
+    font-size: 42px;
+  }
 }
 
 @media (max-width: 767px) {
