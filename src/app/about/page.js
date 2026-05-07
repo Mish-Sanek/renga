@@ -91,7 +91,7 @@ const page = () => {
           </li>
         ))}
         <li>
-          <Link href="#">Full list</Link>
+          <Link href="clients">Full list</Link>
         </li>
       </ul>
 

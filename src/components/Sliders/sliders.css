@@ -52,7 +52,7 @@
   font-size: 29px;
   border-radius: 30px;
   color: #ffffff;
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
 }
 
 .slider-dots {
@@ -72,4 +72,38 @@
 
 .dot.active {
   background: #333;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .slider-container__header {
+    flex-direction: column;
+  }
+
+  .slider-track {
+    width: calc(100% - 95px);
+  }
+}
+
+@media (max-width: 767px) {
+
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider-container__header {
+    position: static;
+    order: 3;
+    margin-top: 30px;
+  }
+
+  .testimonial-card__text {
+    font-size: 30px;
+  }
+
+  .testimonial-card__author {
+    margin-top: 20px;
+  }
+
+  .slider-dots {display: none;}
 }
