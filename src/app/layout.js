@@ -2,6 +2,7 @@ import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import PageHeader from "@/components/PageHeader";
 import PageFooterBig from "@/components/PageFooterBig";
+import ScrollContainer from "@/components/ScrollContainer";
 
 export const metadata = {
   metadataBase: new URL("https://renua.one"),
@@ -24,8 +25,7 @@ export const metadata = {
   publisher: "Renua",
   openGraph: {
     title: "Renua",
-    description:
-      "Brand, product and digital design agency.",
+    description: "Brand, product and digital design agency.",
     url: "https://renua.one",
     siteName: "Renua",
     images: [
@@ -42,8 +42,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Renua",
-    description:
-      "Brand, product and digital design agency.",
+    description: "Brand, product and digital design agency.",
     images: ["/Renua_Preview.png"],
     creator: "@renua",
   },
@@ -69,11 +68,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="app">
-          <PageHeader />
-          {children}
-          <PageFooterBig />
-        </div>
+        <ScrollContainer>
+          <div className="app">
+            <PageHeader />
+            {children}
+            <PageFooterBig />
+          </div>
+        </ScrollContainer>
       </body>
       <GoogleAnalytics gaId="G-54E24VX7E5" />
       {/* <Script

@@ -65,7 +65,7 @@
 
 .about__info p {
   position: sticky;
-  top: 0;
+  top: 100px;
   font-weight: 500;
 }
 

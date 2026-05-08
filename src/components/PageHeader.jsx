@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useLenis } from "lenis/react";
 
 const links = [
   { name: "Work", url: "/work" },
@@ -12,13 +13,24 @@ const links = [
 ];
 
 const PageHeader = () => {
+  const headerRef = useRef();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   const closeMenu = () => setIsOpen(false)
 
+  useLenis(({direction}) => {
+    if(!headerRef.current) return;
+
+    if(direction === 1) {
+      headerRef.current.classList.add('page-header--hidden')
+    } else {
+      headerRef.current.classList.remove('page-header--hidden')
+    }
+  })
+
   return (
-    <header className={`page-header ${isOpen ? "opened" : ""}`}>
+    <header ref={headerRef} className={`page-header ${isOpen ? "opened" : ""}`}>
       <Link href="/" className="page-header__logo">
         <picture>
           <source srcSet="img/logo-short.svg" media="(max-width: 767px)" />
