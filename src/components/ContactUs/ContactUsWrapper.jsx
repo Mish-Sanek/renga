@@ -319,7 +319,6 @@ const ContactUsWrapper = () => {
             </button>
           </form>
         </div>
-        <ContactUsFooter />
         {isLoading && (
           <ContactUsSubmitLoader
             attachmentsCount={attachmentsCount}

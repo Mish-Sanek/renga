@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const PageFooterBig = () => {
@@ -9,7 +10,7 @@ const PageFooterBig = () => {
             <span>Have a project in mind?</span>
             Let’s get to work.
           </h3>
-          <a href="">Start a project</a>
+          <Link href="/contact-us">Start a project</Link>
         </section>
 
         <ul className="page-footer__links">
@@ -28,10 +29,10 @@ const PageFooterBig = () => {
           <li>
             Agency
             <p>
-              <a href="">Work</a>
-              <a href="">Services</a>
-              <a href="">Clients</a>
-              <a href="">About</a>
+              <Link href="/work">Work</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/clients">Clients</Link>
+              <Link href="/about">About</Link>
               <a href="">Blog</a>
               <a href="">Privacy</a>
             </p>

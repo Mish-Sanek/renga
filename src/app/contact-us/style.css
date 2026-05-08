@@ -314,12 +314,6 @@ textarea {
   gap: 36px;
 }
 
-/* Hide default page footer on contact-us page */
-.contact-us ~ .page-footer,
-body:has(.contact-us) .page-footer {
-  display: none !important;
-}
-
 .contact-us-footer span {
   font-size: 20px;
   margin-right: auto;
