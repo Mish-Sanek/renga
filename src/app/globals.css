@@ -162,6 +162,17 @@ html.lenis, html.lenis body {
     justify-content: flex-end;
     padding: 20px;
     z-index: 1;
+    background-color: transparent;
+    backdrop-filter: none;
+  }
+
+  .page-header.opened {
+    transform: translateY(0) !important;
+  }
+
+  .page-header:not(.opened) {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
   }
 
   .page-header__logo {
@@ -174,7 +185,8 @@ html.lenis, html.lenis body {
 
   .page-header__nav {
     display: none;
-    background-color: inherit;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
   }
 
   .page-header__nav a {
@@ -261,8 +273,9 @@ html.lenis, html.lenis body {
 }
 
 .page-footer__links {
+  width: 50%;
   display: flex;
-  gap: 118px;
+  justify-content: space-between;
 }
 
 .page-footer__links li {
@@ -358,7 +371,7 @@ html.lenis, html.lenis body {
   }
 
   .page-footer__links {
-    justify-content: space-between;
+    width: 100%;
   }
 
   .page-footer__bottom {

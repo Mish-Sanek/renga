@@ -65,9 +65,6 @@
 }
 
 .services-features__sticky {
-  position: sticky;
-  top: 100px;
-  left: 0;
   max-width: 525px;
   display: flex;
   flex-direction: column;

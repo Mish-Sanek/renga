@@ -64,8 +64,6 @@
 }
 
 .about__info p {
-  position: sticky;
-  top: 100px;
   font-weight: 500;
 }
 
