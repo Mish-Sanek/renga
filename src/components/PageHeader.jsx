@@ -45,6 +45,7 @@ const PageHeader = () => {
             href={link.url}
             key={link.url}
             onClick={closeMenu}
+            scroll={true}
           >
             {link.name}
           </Link>
