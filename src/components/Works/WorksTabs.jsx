@@ -8,14 +8,14 @@ const WorksTabs = () => {
   const pathname = usePathname();
 
   const tabs = [
-    {id: 'all', name: 'All', path: '/works'},
-    {id: 'brand-identity', name: 'Brand Identity', path: '/works/brand-identity'},
-    {id: 'product-design', name: 'Product Design', path: '/works/product-design'},
-    {id: 'web-design', name: 'Web Design', path: '/works/web-design'},
-    {id: 'motion-design', name: 'Motion Design', path: '/works/motion-design'},
-    {id: 'illustration', name: 'Illustration', path: '/works/illustration'},
-    {id: '3D-motion', name: '3D Motion', path: '/works/3D-motion'},
-    {id: 'campaign-design', name: 'Campaign Design', path: '/works/campaign-design'},
+    {id: 'all', name: 'All', path: '/work'},
+    {id: 'brand-identity', name: 'Brand Identity', path: '/work/brand-identity'},
+    {id: 'product-design', name: 'Product Design', path: '/work/product-design'},
+    {id: 'web-design', name: 'Web Design', path: '/work/web-design'},
+    {id: 'motion-design', name: 'Motion Design', path: '/work/motion-design'},
+    {id: 'illustration', name: 'Illustration', path: '/work/illustration'},
+    {id: '3D-motion', name: '3D Motion', path: '/work/3D-motion'},
+    {id: 'campaign-design', name: 'Campaign Design', path: '/work/campaign-design'},
   ]
 
   return (

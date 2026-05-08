@@ -5,10 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { name: "Work", url: "works" },
-  { name: "Services", url: "services" },
-  { name: "Clients", url: "clients" },
-  { name: "About", url: "about" },
+  { name: "Work", url: "/work" },
+  { name: "Services", url: "/services" },
+  { name: "Clients", url: "/clients" },
+  { name: "About", url: "/about" },
 ];
 
 const PageHeader = () => {

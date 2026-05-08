@@ -298,6 +298,7 @@
   left: 0;
   padding: 24px;
   z-index: 1;
+  opacity: 0;
   transition: opacity 0.5s ease;
 }
 
@@ -337,7 +338,7 @@
 }
 
 .about-projects__item:hover .about-projects__item-info {
-  opacity: 0;
+  opacity: 1;
 }
 
 .about-projects__more {

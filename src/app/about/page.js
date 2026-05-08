@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./about.css";
+
 import team from "@/app/img/about/team.jpg";
 import studio from "@/app/img/about/studio.jpg";
 
@@ -13,14 +14,30 @@ import vodafone from "@/app/img/home/partners/vodafone.svg";
 import eclipse from "@/app/img/home/partners/eclipse.svg";
 import polkadot from "@/app/img/home/partners/polkadot.svg";
 import amc from "@/app/img/home/partners/amc.svg";
+import freedomPoster from "@/app/img/home/works/freedom-poster.jpg"
 
 import Link from "next/link";
 import TestimonialsSlider from "@/components/Sliders/TestimonialsSlider";
 import LetsBuild from "@/components/LetsBuild/LetsBuild";
-
-import freedomPoster from "@/app/img/home/works/freedom-poster.jpg"
-import { testimonialsList } from "@/lib/reviews";
 import BorderedTitle from "@/components/BorderedTitle/BorderedTitle";
+
+import { testimonialsList } from "@/lib/reviews";
+
+
+export const metadata = {
+  title: "About Renua — Digital Design Studio",
+
+  description:
+    "Renua is a digital design studio working with startups and global companies to create scalable brands and digital products.",
+
+  keywords: [
+    "digital design studio",
+    "creative agency",
+    "branding studio",
+    "product design studio",
+    "ui ux studio",
+  ],
+};
 
 const partners = [
   huawei,
@@ -135,7 +152,7 @@ const page = () => {
             <video src="/videos/Vodafone.webm"  className="about-projects__item-video"/>
           </Link>
         </nav>
-        <Link href='works' className="about-projects__more">See more works</Link>
+        <Link href='work' className="about-projects__more">See more works</Link>
       </section>
     </main>
   );

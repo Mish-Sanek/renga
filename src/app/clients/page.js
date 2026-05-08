@@ -1,11 +1,27 @@
 import "./clients.css";
 import Image from "next/image";
 import heroPoster from "@/app/img/clients/hero.png";
+
 import HomePartners from "@/components/Home/Partners/HomePartners";
 import TestimonialsSlider from "@/components/Sliders/TestimonialsSlider";
-import { testimonialsList } from "@/lib/reviews";
 import LetsBuild from "@/components/LetsBuild/LetsBuild";
 import BorderedTitle from "@/components/BorderedTitle/BorderedTitle";
+import { testimonialsList } from "@/lib/reviews";
+
+export const metadata = {
+  title: "Clients — Renua Design Agency",
+
+  description:
+    "We partner with startups and global companies across fintech, SaaS, AI and digital products.",
+
+  keywords: [
+    "design agency clients",
+    "startup clients",
+    "saas clients",
+    "agency collaborations",
+    "digital product clients",
+  ],
+};
 
 const collaborationsList = [
   {

@@ -4,26 +4,29 @@ import PageHeader from "@/components/PageHeader";
 import PageFooterBig from "@/components/PageFooterBig";
 
 export const metadata = {
+  metadataBase: new URL("https://renua.one"),
   title: {
-    default: "Renua - Creative Agency",
+    default: "Renua — Brand, Product & Digital Design Agency",
     template: "%s | Renua",
   },
   description:
-    "Renua - shaping brands and digital experiences through motion, design, and storytelling.",
+    "Renua is a digital design agency creating brands, products and digital experiences for startups and technology companies.",
   keywords: [
-    "creative agency",
-    "motion design",
-    "branding",
-    "digital storytelling",
+    "design agency",
+    "product design agency",
+    "branding agency",
+    "saas design agency",
+    "ui ux agency",
+    "digital design studio",
   ],
-  authors: [{ name: "Renua Team", url: "https://renua.com" }],
+  authors: [{ name: "Renua Team", url: "https://renua.one" }],
   creator: "Renua Creative Agency",
   publisher: "Renua",
   openGraph: {
-    title: "Renua - Creative Agency",
+    title: "Renua",
     description:
-      "Shaping brands and digital experiences through motion and design.",
-    url: "https://renua.com",
+      "Brand, product and digital design agency.",
+    url: "https://renua.one",
     siteName: "Renua",
     images: [
       {
@@ -38,14 +41,14 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Renua - Creative Agency",
+    title: "Renua",
     description:
-      "Shaping brands and digital experiences through motion and design.",
+      "Brand, product and digital design agency.",
     images: ["/Renua_Preview.png"],
     creator: "@renua",
   },
   alternates: {
-    canonical: "https://renua.com",
+    canonical: "https://renua.one",
   },
   robots: {
     index: true,

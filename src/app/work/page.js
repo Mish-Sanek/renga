@@ -3,6 +3,21 @@ import './works.css'
 import Works from '@/components/Works/Works'
 import { allWorks } from '@/lib/works'
 
+export const metadata = {
+  title: "Selected Work — Renua",
+
+  description:
+    "Selected branding, product design and digital experience projects created for startups and global companies.",
+
+  keywords: [
+    "design portfolio",
+    "product design portfolio",
+    "branding portfolio",
+    "ui ux projects",
+    "digital agency portfolio",
+  ],
+};
+
 const page = () => {
   return (
     <main className='works-content'>
