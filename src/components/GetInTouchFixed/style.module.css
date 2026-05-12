@@ -1,0 +1,15 @@
+.contactUs {display: none}
+
+@media (min-width: 768px) {
+  .contactUs {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: block;
+    padding: 12px 24px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #0d0d0d;
+    border-radius: 30px;
+  }
+}

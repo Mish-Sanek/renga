@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLenis } from "lenis/react";
+import Image from "next/image";
 
 const links = [
   { name: "Work", url: "/work" },
@@ -33,8 +34,8 @@ const PageHeader = () => {
     <header ref={headerRef} className={`page-header ${isOpen ? "opened" : ""}`}>
       <Link href="/" className="page-header__logo">
         <picture>
-          <source srcSet="img/logo-short.svg" media="(max-width: 767px)" />
-          <img src="img/logo.svg" alt="RENUA logo" />
+          <source srcSet="/img/logo-short.svg" media="(max-width: 767px)" />
+          <Image src="/img/logo.svg" width={153} height={36} priority alt="RENUA logo" />
         </picture>
       </Link>
 

@@ -3,6 +3,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import PageHeader from "@/components/PageHeader";
 import PageFooterBig from "@/components/PageFooterBig";
 import ScrollContainer from "@/components/ScrollContainer";
+import GetInTouchFixed from "@/components/GetInTouchFixed";
 
 export const metadata = {
   metadataBase: new URL("https://renua.one"),
@@ -73,6 +74,7 @@ export default function RootLayout({ children }) {
             <PageHeader />
             {children}
             <PageFooterBig />
+            <GetInTouchFixed />
           </div>
         </ScrollContainer>
       </body>

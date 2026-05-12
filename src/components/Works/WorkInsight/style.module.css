@@ -1,0 +1,34 @@
+.WorkInsight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 132px 0;
+}
+
+.WorkInsight__section {
+  max-width: 570px;
+}
+
+.WorkInsight__title {
+  font-weight: 500;
+}
+
+.WorkInsight__descr {
+  margin-top: 28px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .WorkInsight {
+    display: flex;
+    margin: 64px 0;
+  }
+
+  .WorkInsight > span {display: none;}
+
+  .WorkInsight__section {font-size: 20px;}
+
+  .WorkInsight__descr {
+    margin-top: 25px;
+  }
+}

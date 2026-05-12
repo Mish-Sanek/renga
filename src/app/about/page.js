@@ -135,7 +135,7 @@ const page = () => {
       <LetsBuild />
 
       <section className="about-projects">
-        <BorderedTitle>Last Project</BorderedTitle>
+        <BorderedTitle>Last Projects</BorderedTitle>
         <nav className="about-projects__list">
           <Link href='#' className="about-projects__item about-projects__item--small">
             <div className="about-projects__item-info" style={{ '--info-color': '#8CE85F' }}>
