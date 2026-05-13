@@ -85,8 +85,6 @@ html.lenis, html.lenis body {
   justify-content: space-between;
   padding: 24px;
   font-weight: 500;
-  background: inherit;
-  mix-blend-mode: difference;
   transition: transform 0.3s ease;
   z-index: 99999;
 }
