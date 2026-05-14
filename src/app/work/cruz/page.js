@@ -3,7 +3,7 @@ import LastProjects from "@/components/LastProjects";
 import WorkDescription from "@/components/Works/WorkDescription";
 import WorkInsight from "@/components/Works/WorkInsight/WorkInsight";
 import WorksContent from "@/components/Works/WorksContent/WorksContent";
-import WorksDualHeightGallery from "@/components/Works/WorksDualHeightGallery";
+import WorksDualHeightGallery from "@/components/Works/WorksDiagonalGallery";
 import WorkSingleMedia from "@/components/Works/WorkSingleMedia";
 import WorksTrippleGallery from "@/components/Works/WorksTrippleGallery/WorksTrippleGallery";
 import WorksTrippleGallerySmall from "@/components/Works/WorksTrippleGallerySmall/WorksTrippleGallerySmall";

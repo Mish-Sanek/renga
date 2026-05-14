@@ -30,7 +30,7 @@ export const allWorks = [
   {
     id: 4,
     picture: '/img/works/ff-card-series.jpg',
-    slug: 'ff-card-series',
+    slug: 'freedom-finance_card-series',
     name: 'Freedom Finance — Card series',
     tags: ['3D Motion']
   },

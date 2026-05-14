@@ -5,9 +5,18 @@
   margin: 132px 0;
 }
 
+.WorkInsight--reversed > span {
+  order: 2;
+}
+
+.WorkInsight--reversed .WorkInsight__section {
+  order: 1;
+}
+
 .WorkInsight__section {
   max-width: 570px;
 }
+
 
 .WorkInsight__title {
   font-weight: 500;

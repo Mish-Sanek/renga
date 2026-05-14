@@ -4,3 +4,9 @@
   height: auto;
   margin: 12px 0;
 }
+
+@media (max-width: 767px) {
+  .singleMedia {
+    margin: 4px 0;
+  }
+}

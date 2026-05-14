@@ -1,0 +1,22 @@
+.gallery {
+  display: flex;
+}
+
+.gallery--reverse {
+  flex-direction: row-reverse;
+}
+
+.media {
+  display: block;
+  width: auto;
+  height: auto;
+  aspect-ratio: 1000/800;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .media {
+    width: 100%;
+    aspect-ratio: initial;
+  }
+}

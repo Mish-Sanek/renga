@@ -2,7 +2,6 @@ import Image from 'next/image';
 import styles from './style.module.css'
 
 const WorksDoubleGallery = ({items}) => {
-  console.log(items[0].src);
   return (
     <div
       className={`${styles.gallery}`}
