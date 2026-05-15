@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useLenis } from "lenis/react";
+import WorksItemSoon from "./WorksItemSoon";
 
 const WorksItem = ({ item }) => {
 
@@ -23,14 +24,16 @@ const WorksItem = ({ item }) => {
     <Link
       href={item.isReady ? `/work/${item.slug}` : '#'}
       scroll={true}
-      className="works-list__item"
+      className={`works-list__item ${!item.isReady ? 'works-list__item--disabled' : ''}`}
       onClick={(e) => !item.isReady && e.preventDefault()}
     >
       <div className="works-list__parallax-wrapper">
         <div ref={imgRef} className="works-list__img-handler">
-          <Image src={item.picture} alt={item.name} width={754} height={600} priority={item.id < 3} />
+          <video src={item.video} poster={item.picture} autoPlay muted loop playsInline />
         </div>
+        {!item.isReady && <WorksItemSoon />}
       </div>
+
       <b>{item.name}</b>
       <ul>
         {item.tags.map((tag) => (

@@ -78,11 +78,13 @@
   will-change: transform;
 }
 
+.works-list__item {position: relative;}
+
 .works-list__item[href="#"] {
   cursor: default;
 }
 
-.works-list__item img {
+.works-list__item video {
   display: block;
   width: 100%;
   height: 100%;

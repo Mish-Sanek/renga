@@ -2,6 +2,7 @@ export const allWorks = [
   {
     id: 0,
     picture: '/img/works/Freedom_bank.webp',
+    video: '/img/home/works/Freedomfinance.webm',
     slug: 'freedom-finance',
     name: 'Freedom Finance',
     tags: ['Brand Identity', 'Product Design'],
@@ -18,6 +19,7 @@ export const allWorks = [
   {
     id: 2,
     picture: '/img/works/cruz.webp',
+    video: '/img/home/works/Cruz.webm',
     slug: 'cruz',
     name: 'Cruz',
     tags: ['Product Design', 'Branding', 'Motion'],
@@ -42,6 +44,7 @@ export const allWorks = [
   {
     id: 5,
     picture: '/img/works/nobleblocks.webp',
+    video: '/img/home/works/Nobleblocks.webm',
     slug: 'nobleblocks',
     name: 'Nobleblocks',
     tags: ['Product Design', 'Branding', 'Motion'],
@@ -50,6 +53,7 @@ export const allWorks = [
   {
     id: 6,
     picture: '/img/works/looksrare.webp',
+    video: '/img/home/works/Looksrare.webm',
     slug: 'looksrare',
     name: 'Looksrare',
     tags: ['Product Design', 'Branding', 'Motion'],
