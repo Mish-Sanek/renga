@@ -1,21 +1,6 @@
 import Image from "next/image";
 import "./about.css";
 
-import team from "@/app/img/about/team.jpg";
-import studio from "@/app/img/about/studio.jpg";
-
-import huawei from "@/app/img/home/partners/huawei.svg";
-import optimism from "@/app/img/home/partners/optimism.svg";
-import ford from "@/app/img/home/partners/ford.svg";
-import abbott from "@/app/img/home/partners/abbott.svg";
-import binance from "@/app/img/home/partners/binance.svg";
-import papara from "@/app/img/home/partners/papara.svg";
-import vodafone from "@/app/img/home/partners/vodafone.svg";
-import eclipse from "@/app/img/home/partners/eclipse.svg";
-import polkadot from "@/app/img/home/partners/polkadot.svg";
-import amc from "@/app/img/home/partners/amc.svg";
-import freedomPoster from "@/app/img/home/works/freedom-poster.jpg"
-
 import Link from "next/link";
 import TestimonialsSlider from "@/components/Sliders/TestimonialsSlider";
 import LetsBuild from "@/components/LetsBuild/LetsBuild";
@@ -40,16 +25,8 @@ export const metadata = {
 };
 
 const partners = [
-  huawei,
-  optimism,
-  ford,
-  abbott,
-  binance,
-  papara,
-  vodafone,
-  eclipse,
-  polkadot,
-  amc,
+  "huawei", "optimism", "ford", "abbott", "binance",
+  "papara", "vodafone", "eclipse", "polkadot", "amc"
 ];
 
 const page = () => {
@@ -61,7 +38,7 @@ const page = () => {
           We design brands, products and digital experiences for ambitious
           teams.
         </p>
-        <Image src={team} className="about-content__img" alt="team" />
+        <Image src={"/img/about/studio.webp"} width={1528} height={1000} className="about-content__img" alt="team" />
       </section>
 
       <section className="about-studio">
@@ -72,7 +49,7 @@ const page = () => {
             production-ready systems.
           </p>
           <p>We combine product thinking, visual design and execution.</p>
-          <Image src={studio} alt="studio" />
+          <Image src={"/img/about/team.webp"} width={1011} height={1011} alt="studio" />
         </div>
       </section>
 
@@ -105,7 +82,7 @@ const page = () => {
       <ul className="about-partners">
         {partners.map((src, idx) => (
           <li key={idx}>
-            <Image src={src} alt="" className="marquee__item" />
+            <Image src={src} width={100} height={100} alt="" className="marquee__item" />
           </li>
         ))}
         <li>
@@ -142,7 +119,7 @@ const page = () => {
               <b>ApeAI</b>
               <span>AI-powered workflow system for modern teams.</span>
             </div>
-            <video src="/videos/ApeAi.webm" poster={freedomPoster.src}  className="about-projects__item-video"/>
+            <video src="/videos/ApeAi.webm" poster="/img/works/ApeAi.webp"  className="about-projects__item-video"/>
           </Link>
           <Link href='#' className="about-projects__item about-projects__item--big">
             <div className="about-projects__item-info" style={{ '--info-color': '#F23111' }}>

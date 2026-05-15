@@ -64,6 +64,7 @@ html.lenis, html.lenis body {
   font-size: 24px;
   color: #0d0d0d;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {

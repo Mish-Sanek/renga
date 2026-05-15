@@ -127,7 +127,9 @@
 }
 
 .works__list-item--big,
-.works__list-item img {
+.works__list-item img,
+.works__list-item video {
+
   display: block;
   width: 100%;
   height: auto;

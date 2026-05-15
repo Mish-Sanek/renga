@@ -1,5 +1,3 @@
-import poster from "@/app/img/home/hero-poster.png"
-
 const HomeHero = () => {
   return (
     <section className="hero">
@@ -10,7 +8,7 @@ const HomeHero = () => {
       <video
         src="/videos/Tama.webm"
         className="hero__video"
-        poster={poster.src}
+        poster="/img/home/hero-poster.jpg"
         autoPlay
         muted
         loop

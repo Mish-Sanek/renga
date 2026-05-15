@@ -1,9 +1,9 @@
 import styles from './style.module.css'
 import Image from "next/image";
 
-const WorksHalfGallery = ({ item }) => {
+const WorksHalfGallery = ({ item , isReversed = false}) => {
   return (
-    <div className={styles.gallery}>
+    <div className={`${styles.gallery} ${isReversed ? styles["gallery--reversed"]: ''}`}>
       <span></span>
       {item.poster !== null ? (
         <video

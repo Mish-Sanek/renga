@@ -1,13 +1,4 @@
 import Image from "next/image";
-
-import ape from "@/app/img/home/works/ape.jpg"
-import freedomPoster from "@/app/img/home/works/freedom-poster.jpg"
-import vodafone from "@/app/img/home/works/vodafone.jpg"
-import cruz from "@/app/img/home/works/cruz.jpg"
-import nvo from "@/app/img/home/works/nvo.jpg"
-import freedomCard from "@/app/img/home/works/freedom-card.jpg"
-import looksrare from "@/app/img/home/works/looksrare.jpg"
-import nobleblocks from "@/app/img/home/works/nobleblocks.jpg"
 import BorderedTitle from "../BorderedTitle/BorderedTitle";
 
 const HomeWorks = () => {
@@ -17,42 +8,42 @@ const HomeWorks = () => {
 
       <div className="works__list">
         <div className="works__list-item">
-          <Image src={ape} alt=""/>
+          <video src="/img/home/works/ApeAi.webm" poster="/img/works/ApeAi.webp" autoPlay loop muted playsInline />
           <b>ApeAI</b>
           <p>AI-powered workflow and achievement tools for modern teams.</p>
         </div>
         <div className="works__list-item">
-          <Image src={freedomPoster} alt="" />
+          <video src="/img/home/works/Freedomfinance.webm" poster="/img/home/works/Freedomfinance-poster.webp" autoPlay loop muted playsInline />
           <b>Freedom Finance</b>
           <p>A visually compelling card identity and ecosystem.</p>
         </div>
         <div className="works__list-item works__list-item--big">
-          <Image src={vodafone} alt="" />
+          <img src="/img/home/works/vodafone.webp" alt="" />
           <b>Vodafone</b>
           <p>Creative campaign and digital experience.</p>
         </div>
         <div className="works__list-item works__list-item--60">
-          <Image src={cruz} alt="" />
+          <video src="/img/home/works/cruz.webm" poster="/img/home/works/cruz.jpg" autoPlay loop muted playsInline />
           <b>Cruz</b>
           <p>Reimagining digital banking.</p>
         </div>
         <div className="works__list-item">
-          <Image src={nvo} alt="" />
+          <img src="/img/home/works/NVO.webp" alt="" />
           <b>NVO</b>
           <p>Brand identity and digital experiences.</p>
         </div>
         <div className="works__list-item">
-          <Image src={freedomCard} alt="" />
+          <img src="/img/home/works/freedom-card-poster.webp" alt="" />
           <b>Freedom Finance - Card series</b>
           <p>Designing a premium card series for modern financial products.</p>
         </div>
         <div className="works__list-item">
-          <Image src={looksrare} alt="" />
+          <video src="/img/home/works/Looksrare.webm" poster="/img/home/works/Looksrare.jpg" autoPlay loop muted playsInline />
           <b>Looksrare</b>
           <p>Marketplace design for digital assets.</p>
         </div>
         <div className="works__list-item works__list-item--big">
-          <Image src={nobleblocks} alt="" />
+          <video src="/img/home/works/Nobleblocks.webm" poster="/img/home/works/Nobleblocks.jpg" autoPlay loop muted playsInline />
           <b>Nobleblocks</b>
           <p>Blockchain-based publishing platform.</p>
         </div>

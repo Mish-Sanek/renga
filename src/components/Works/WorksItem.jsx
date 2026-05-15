@@ -8,7 +8,7 @@ const WorksItem = ({ item }) => {
 
   const imgRef = useRef();
 
-  useLenis(({ scroll }) => {
+  useLenis(() => {
     if (!imgRef.current) return;
     const rect = imgRef.current.getBoundingClientRect();
     const windowHeight = window.innerHeight;
@@ -20,7 +20,12 @@ const WorksItem = ({ item }) => {
   });
 
   return (
-    <Link href={`/work/${item.slug}`} scroll={true} className="works-list__item">
+    <Link
+      href={item.isReady ? `/work/${item.slug}` : '#'}
+      scroll={true}
+      className="works-list__item"
+      onClick={(e) => !item.isReady && e.preventDefault()}
+    >
       <div className="works-list__parallax-wrapper">
         <div ref={imgRef} className="works-list__img-handler">
           <Image src={item.picture} alt={item.name} width={754} height={600} priority={item.id < 3} />

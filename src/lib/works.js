@@ -1,129 +1,147 @@
 export const allWorks = [
   {
     id: 0,
-    picture: '/img/works/freedom-finance.jpg',
+    picture: '/img/works/Freedom_bank.webp',
     slug: 'freedom-finance',
     name: 'Freedom Finance',
-    tags: ['Brand Identity', 'Product Design']
+    tags: ['Brand Identity', 'Product Design'],
+    isReady: true,
   },
   {
     id: 1,
-    picture: '/img/works/ape-ai.jpg',
-    slug: 'ape-ai',
-    name: 'Ape AI',
-    tags: ['Product Design', 'Branding']
+    picture: '/img/works/vodafone.webp',
+    slug: 'vodafone',
+    name: 'Vodafone',
+    tags: ['Campaign Design', 'Motion'],
+    isReady: true,
   },
   {
     id: 2,
-    picture: '/img/works/vodafone.jpg',
-    slug: 'vodafone',
-    name: 'Vodafone',
-    tags: ['Campaign Design', 'Motion']
+    picture: '/img/works/cruz.webp',
+    slug: 'cruz',
+    name: 'Cruz',
+    tags: ['Product Design', 'Branding', 'Motion'],
+    isReady: true,
   },
   {
     id: 3,
-    picture: '/img/works/cruz.jpg',
-    slug: 'cruz',
-    name: 'Cruz',
-    tags: ['Product Design', 'Branding', 'Motion']
+    picture: '/img/works/Freedom_cards.webp',
+    slug: 'freedom-finance_card-series',
+    name: 'Freedom Finance — Card series',
+    tags: ['3D Motion'],
+    isReady: true,
   },
   {
     id: 4,
-    picture: '/img/works/ff-card-series.jpg',
-    slug: 'freedom-finance_card-series',
-    name: 'Freedom Finance — Card series',
-    tags: ['3D Motion']
+    picture: '/img/works/nvo.webp',
+    slug: 'nvo',
+    name: 'NVO',
+    tags: ['Brand Identity', 'Web Design'],
+    isReady: true,
   },
   {
     id: 5,
-    picture: '/img/works/nvo.jpg',
-    slug: 'nvo',
-    name: 'NVO',
-    tags: ['Brand Identity', 'Web Design']
+    picture: '/img/works/nobleblocks.webp',
+    slug: 'nobleblocks',
+    name: 'Nobleblocks',
+    tags: ['Product Design', 'Branding', 'Motion'],
+    isReady: true,
   },
   {
     id: 6,
-    picture: '/img/works/nobleblocks.jpg',
-    slug: 'nobleblocks',
-    name: 'Nobleblocks',
-    tags: ['Product Design', 'Branding', 'Motion']
+    picture: '/img/works/looksrare.webp',
+    slug: 'looksrare',
+    name: 'Looksrare',
+    tags: ['Product Design', 'Branding', 'Motion'],
+    isReady: true,
   },
   {
     id: 7,
-    picture: '/img/works/pancakeswap.jpg',
-    slug: 'pancakeswap',
-    name: 'Pancakeswap',
-    tags: ['Product Design', 'Branding', 'Motion']
+    picture: '/img/works/ApeAi.webp',
+    slug: 'ape-ai',
+    name: 'Ape AI',
+    tags: ['Product Design', 'Branding'],
+    isReady: false,
   },
   {
     id: 8,
-    picture: '/img/works/looksrare.jpg',
-    slug: 'looksrare',
-    name: 'Looksrare',
-    tags: ['Product Design', 'Branding', 'Motion']
+    picture: '/img/works/Pancakeswap.webp',
+    slug: 'pancakeswap',
+    name: 'Pancakeswap',
+    tags: ['Product Design', 'Branding', 'Motion'],
+    isReady: false,
   },
   {
     id: 9,
-    picture: '/img/works/ape-ai-achivement-badges.jpg',
+    picture: '/img/works/Ape_badges.webp',
     slug: 'ape-ai-achivement-badges',
     name: 'Ape AI — Achievement Badges',
-    tags: ['Illustration', 'Branding']
+    tags: ['Illustration', 'Branding'],
+    isReady: false,
   },
   {
     id: 10,
-    picture: '/img/works/pancake.jpg',
+    picture: '/img/works/Pancake.webp',
     slug: 'pancake',
     name: 'Pancake',
-    tags: ['3D Motion', 'Illustration']
+    tags: ['3D Motion', 'Illustration'],
+    isReady: false,
   },
   {
     id: 11,
-    picture: '/img/works/velas.jpg',
+    picture: '/img/works/Velas.webp',
     slug: 'velas',
     name: 'Velas',
-    tags: ['Brand Identity', 'Product Design ', 'Motion']
+    tags: ['Brand Identity', 'Product Design ', 'Motion'],
+    isReady: false,
   },
   {
     id: 12,
-    picture: '/img/works/pranzo.jpg',
+    picture: '/img/works/Pranzo.webp',
     slug: 'pranzo',
     name: 'Pranzo',
-    tags: ['Brand Identity', 'Motion Design']
+    tags: ['Brand Identity', 'Motion Design'],
+    isReady: false,
   },
   {
     id: 13,
-    picture: '/img/works/tama.jpg',
+    picture: '/img/works/Tama.webp',
     slug: 'tama',
     name: 'Tama',
-    tags: ['Product Design', 'Branding']
+    tags: ['Product Design', 'Branding'],
+    isReady: false,
   },
   {
     id: 14,
-    picture: '/img/works/eclipse.jpg',
+    picture: '/img/works/Eclipse_Parlays_fun.webp',
     slug: 'eclipse',
     name: 'Eclipse — Parlays fun',
-    tags: ['Illustration', '3D Motion']
+    tags: ['Illustration', '3D Motion'],
+    isReady: false,
   },
   {
     id: 15,
-    picture: '/img/works/polkadot.jpg',
+    picture: '/img/works/Polkadot.webp',
     slug: 'polkadot',
     name: 'Polkadot',
-    tags: ['Campaign Design', 'Motion Design']
+    tags: ['Campaign Design', 'Motion Design'],
+    isReady: false,
   },
   {
     id: 16,
-    picture: '/img/works/bobaswap.jpg',
+    picture: '/img/works/boba.webp',
     slug: 'bobaswap',
     name: 'Bobaswap',
-    tags: ['Illustration', 'Branding', 'Motion']
+    tags: ['Illustration', 'Branding', 'Motion'],
+    isReady: false,
   },
   {
     id: 17,
-    picture: '/img/works/nft-collections.jpg',
+    picture: '/img/works/NFT.webp',
     slug: 'nft-collections',
     name: 'NFT Collections',
-    tags: ['Illustration', 'Art Direction']
+    tags: ['Illustration', 'Art Direction'],
+    isReady: false,
   },
 
 ]

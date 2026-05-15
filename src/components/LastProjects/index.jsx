@@ -2,8 +2,6 @@ import styles from "./style.module.css";
 import Link from "next/link";
 import BorderedTitle from "../BorderedTitle/BorderedTitle";
 
-import freedomPoster from "@/app/img/home/works/freedom-poster.jpg"
-
 const LastProjects = () => {
   return (
     <section className={styles.lastProjects}>
@@ -21,8 +19,8 @@ const LastProjects = () => {
             <span>AI-powered workflow system for modern teams.</span>
           </div>
           <video
-            src="/videos/ApeAi.webm"
-            poster={freedomPoster.src}
+            src="/img/home/works/Freedomfinance.webm"
+            poster="/img/home/works/Freedomfinance-poster.jpg"
             autoPlay
             playsInline
             muted
@@ -41,7 +39,12 @@ const LastProjects = () => {
             <span>Creative campaign and digital experience.</span>
           </div>
           <video
-            src="/videos/Vodafone.webm"
+            src="/img/home/works/vodafone.webm"
+            poster="/img/home/works/vodafone.jpg"
+            autoPlay
+            playsInline
+            muted
+            loop
           />
         </Link>
       </nav>

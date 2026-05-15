@@ -1,0 +1,21 @@
+.slider {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 96px;
+}
+
+.slider img {
+  flex-shrink: 0;
+
+}
+
+@media (max-width: 767px) {
+
+  .slider {
+    margin-top: 36px;
+  }
+
+  .slider img {
+    width: clamp(200px, 50vw, 400px);
+  }
+}

@@ -78,6 +78,10 @@
   will-change: transform;
 }
 
+.works-list__item[href="#"] {
+  cursor: default;
+}
+
 .works-list__item img {
   display: block;
   width: 100%;

@@ -4,7 +4,12 @@
   gap: 12px;
 }
 
-.gallery img {
+.gallery--reversed {
+  direction: rtl;
+}
+
+.gallery img,
+.gallery video {
   display: block;
   width: 100%;
   height: auto;
