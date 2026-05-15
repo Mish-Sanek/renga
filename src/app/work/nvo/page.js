@@ -176,7 +176,7 @@ const page = () => {
         descr={
           "Designing a more flexible digital ecosystem for a next-generation trading platform."
         }
-        posterUrl={"/img/works/freedom-finance-cards/hero-poster.jpg"}
+        posterUrl={"/img/works/nvo/hero-poster.jpg"}
         videoUrl={null}
       />
       <WorksContent>

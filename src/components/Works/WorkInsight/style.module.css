@@ -30,6 +30,7 @@
 @media (max-width: 767px) {
   .WorkInsight {
     display: flex;
+    padding: 0 12px;
     margin: 64px 0;
   }
 

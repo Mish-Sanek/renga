@@ -2,15 +2,14 @@
   display: flex;
 }
 
-.gallery--reverse {
+.gallery--reversed {
   flex-direction: row-reverse;
 }
 
 .media {
-  display: block;
   width: auto;
   height: auto;
-  aspect-ratio: 1000/800;
+  aspect-ratio: 1060/742;
   object-fit: cover;
 }
 
