@@ -10,7 +10,7 @@ import WorksDoubleGallery from "@/components/Works/WorksDoubleGallery";
 import LastProjects from "@/components/LastProjects";
 
 const descriptionData = {
-  hiddenTitle: "freedom finance",
+  hiddenTitle: "freedom finance renua",
 
   listsData: [
     {

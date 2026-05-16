@@ -10,7 +10,7 @@ import WorksTrippleGallerySmall from "@/components/Works/WorksTrippleGallerySmal
 import React from "react";
 
 const descriptionData = {
-  hiddenTitle: "cruz",
+  hiddenTitle: "cruz renua",
 
   listsData: [
     {

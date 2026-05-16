@@ -10,7 +10,7 @@ import WorksThirdEmptyGallery from "@/components/Works/WorksThirdEmptyGallery";
 import WorksTrippleRowGallery from "@/components/Works/WorksTrippleRowGallery";
 
 const descriptionData = {
-  hiddenTitle: "NVO",
+  hiddenTitle: "NVO renua",
 
   listsData: [
     {

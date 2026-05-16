@@ -7,7 +7,7 @@ import WorkSingleMedia from "@/components/Works/WorkSingleMedia";
 import WorksTrippleGallery from "@/components/Works/WorksTrippleGallery/WorksTrippleGallery";
 
 const descriptionData = {
-  hiddenTitle: "nobleblocks",
+  hiddenTitle: "nobleblocks renua",
 
   listsData: [
     {

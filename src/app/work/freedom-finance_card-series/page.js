@@ -8,7 +8,7 @@ import WorkSingleMedia from "@/components/Works/WorkSingleMedia";
 import WorksTrippleGallery from "@/components/Works/WorksTrippleGallery/WorksTrippleGallery";
 
 const descriptionData = {
-  hiddenTitle: "freedom finance card series",
+  hiddenTitle: "freedom finance card series renua",
 
   listsData: [
     {

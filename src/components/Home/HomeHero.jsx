@@ -6,7 +6,7 @@ const HomeHero = () => {
         experiences for ambitious teams.
       </h1>
       <video
-        src="/videos/Tama.webm"
+        src="/img/home/Tama.webm"
         className="hero__video"
         poster="/img/home/hero-poster.jpg"
         autoPlay

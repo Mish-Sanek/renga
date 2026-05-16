@@ -67,6 +67,14 @@ html.lenis, html.lenis body {
   overflow: hidden;
 }
 
+video:not(.controllable) {
+  pointer-events: none;
+}
+
+video:not(.controllable)::-webkit-media-controls {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .app {
     overflow: hidden;

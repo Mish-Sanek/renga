@@ -9,7 +9,7 @@ import WorksTrippleGallery from '@/components/Works/WorksTrippleGallery/WorksTri
 import WorksTrippleRowGallery from '@/components/Works/WorksTrippleRowGallery';
 
 const descriptionData = {
-  hiddenTitle: "looksrare",
+  hiddenTitle: "looksrare renua",
 
   listsData: [
     {
