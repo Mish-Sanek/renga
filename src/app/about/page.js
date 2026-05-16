@@ -119,14 +119,14 @@ const page = () => {
               <b>ApeAI</b>
               <span>AI-powered workflow system for modern teams.</span>
             </div>
-            <video src="/videos/ApeAi.webm" poster="/img/works/ApeAi.webp" autoplay muted loop playsInline className="about-projects__item-video"/>
+            <video src="/videos/ApeAi.webm" poster="/img/works/ApeAi.webp" autoPlay muted loop playsInline className="about-projects__item-video"/>
           </Link>
           <Link href='#' className="about-projects__item about-projects__item--big">
             <div className="about-projects__item-info" style={{ '--info-color': '#F23111' }}>
               <b>Vodafone</b>
               <span>Creative campaign and digital experience.</span>
             </div>
-            <video src="/videos/Vodafone.webm" autoplay muted loop playsInline  className="about-projects__item-video"/>
+            <video src="/videos/Vodafone.webm" autoPlay muted loop playsInline  className="about-projects__item-video"/>
           </Link>
         </nav>
         <Link href='work' className="about-projects__more">See more works</Link>
