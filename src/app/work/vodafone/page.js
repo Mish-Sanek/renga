@@ -7,7 +7,29 @@ import WorksHalfGallery from "@/components/Works/WorksHalfGallery";
 import WorkSingleMedia from "@/components/Works/WorkSingleMedia";
 import WorksTrippleGallery from "@/components/Works/WorksTrippleGallery/WorksTrippleGallery";
 import WorksTrippleGallerySmall from "@/components/Works/WorksTrippleGallerySmall/WorksTrippleGallerySmall";
-import React from "react";
+
+export const metadata = {
+  title: "Vodafone — Brand Campaign & Illustration System | Renua",
+
+  description:
+    "A large-scale illustration and campaign system created for Vodafone across digital platforms, outdoor advertising and branded communication.",
+
+  keywords: [
+    "brand campaign design",
+    "telecom branding",
+    "illustration system",
+    "advertising design",
+    "digital campaign visuals",
+    "motion and illustration",
+  ],
+
+  openGraph: {
+    title: "Vodafone — Brand Campaign & Illustration System | Renua",
+
+    description:
+      "A large-scale illustration and campaign system for digital and outdoor communication.",
+  },
+};
 
 const descriptionData = {
   hiddenTitle: "vodafone renua",

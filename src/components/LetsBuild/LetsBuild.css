@@ -25,6 +25,11 @@
   color: #ffffff;
   background-color: #0D0D0D;
   border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.lets-build__link:hover {
+  background-color: #A6A6A6;
 }
 
 @media (max-width: 767px) {

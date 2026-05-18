@@ -7,6 +7,29 @@ import WorksDoubleGallery from "@/components/Works/WorksDoubleGallery";
 import WorkSingleMedia from "@/components/Works/WorkSingleMedia";
 import WorksTrippleGallery from "@/components/Works/WorksTrippleGallery/WorksTrippleGallery";
 
+export const metadata = {
+  title: "Freedom Finance Card Series — Fintech Card Design & 3D Visuals | Renua",
+
+  description:
+    "A premium bank card series combining fintech branding, material exploration and cinematic 3D visual storytelling.",
+
+  keywords: [
+    "bank card design",
+    "fintech visual identity",
+    "payment card branding",
+    "3D banking visuals",
+    "financial product rendering",
+    "premium card design",
+  ],
+
+  openGraph: {
+    title: "Freedom Finance Card Series — Fintech Card Design & 3D Visuals | Renua",
+
+    description:
+      "A premium fintech card series combining branding, materials and cinematic 3D visuals.",
+  },
+};
+
 const descriptionData = {
   hiddenTitle: "freedom finance card series renua",
 

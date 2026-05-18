@@ -9,6 +9,29 @@ import WorksThirdSmallGallery from "@/components/Works/WorksThirdBigGallery";
 import WorksThirdEmptyGallery from "@/components/Works/WorksThirdEmptyGallery";
 import WorksTrippleRowGallery from "@/components/Works/WorksTrippleRowGallery";
 
+export const metadata = {
+  title: "NVO — Trading Platform Product Design & Branding | Renua",
+
+  description:
+    "A high-performance trading platform combining product systems, motion design and digital brand identity for modern finance.",
+
+  keywords: [
+    "trading platform design",
+    "fintech dashboard",
+    "crypto trading UI",
+    "Web3 product design",
+    "digital trading experience",
+    "fintech motion design",
+  ],
+
+  openGraph: {
+    title: "NVO — Trading Platform Product Design & Branding | Renua",
+
+    description:
+      "A high-performance trading platform combining product systems and digital brand identity.",
+  },
+};
+
 const descriptionData = {
   hiddenTitle: "NVO renua",
 

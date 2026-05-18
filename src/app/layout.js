@@ -7,59 +7,58 @@ import GetInTouchFixed from "@/components/GetInTouchFixed";
 
 export const metadata = {
   metadataBase: new URL("https://renua.one"),
+
   title: {
-    default: "Renua — Brand, Product & Digital Design Agency",
+    default: "Renua — AI, Fintech & Digital Product Design Studio",
     template: "%s | Renua",
   },
+
   description:
-    "Renua is a digital design agency creating brands, products and digital experiences for startups and technology companies.",
+    "Renua is a digital product design studio creating branding, motion systems and scalable experiences for AI, fintech and technology companies.",
+
   keywords: [
-    "design agency",
     "product design agency",
     "branding agency",
-    "saas design agency",
-    "ui ux agency",
-    "digital design studio",
+    "motion design",
+    "AI product design",
+    "fintech design",
+    "digital product studio",
+    "startup design partner",
   ],
-  authors: [{ name: "Renua Team", url: "https://renua.one" }],
-  creator: "Renua Creative Agency",
-  publisher: "Renua",
+
   openGraph: {
-    title: "Renua",
-    description: "Brand, product and digital design agency.",
+    title: "Renua — AI, Fintech & Digital Product Design Studio",
+
+    description:
+      "Branding, motion systems and digital product experiences for AI, fintech and technology companies.",
+
     url: "https://renua.one",
+
     siteName: "Renua",
+
     images: [
       {
         url: "/Renua_Preview.png",
         width: 1200,
         height: 630,
-        alt: "Renua - Preview",
       },
     ],
+
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Renua",
-    description: "Brand, product and digital design agency.",
+    description: "AI, fintech and digital product design studio.",
     images: ["/Renua_Preview.png"],
-    creator: "@renua",
-  },
-  alternates: {
-    canonical: "https://renua.one",
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
   icons: {
     icon: "favicon/favicon.ico",
     shortcut: "favicon/favicon-16x16.png",
     apple: "favicon/apple-touch-icon.png",
   },
-  themeColor: "#0D0D0D",
   other: {
     "p:domain_verify": "314f74d0dbf28b0b51e17b63977cdc71",
   },

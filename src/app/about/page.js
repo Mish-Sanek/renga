@@ -8,25 +8,40 @@ import BorderedTitle from "@/components/BorderedTitle/BorderedTitle";
 
 import { testimonialsList } from "@/lib/reviews";
 
-
 export const metadata = {
-  title: "About Renua — Digital Design Studio",
+  title: "Clients — AI, Fintech & Technology Companies | Renua",
 
   description:
-    "Renua is a digital design studio working with startups and global companies to create scalable brands and digital products.",
+    "We partner with startups and global companies across AI, fintech, SaaS and digital products to build scalable product experiences.",
 
   keywords: [
-    "digital design studio",
-    "creative agency",
-    "branding studio",
-    "product design studio",
-    "ui ux studio",
+    "design agency clients",
+    "fintech clients",
+    "AI startups",
+    "technology companies",
+    "product design collaborations",
+    "startup partnerships",
   ],
+
+  openGraph: {
+    title: "Clients — Renua",
+
+    description:
+      "Selected clients and collaborations across AI, fintech and technology.",
+  },
 };
 
 const partners = [
-  "huawei", "optimism", "ford", "abbott", "binance",
-  "papara", "vodafone", "eclipse", "polkadot", "amc"
+  "huawei",
+  "optimism",
+  "ford",
+  "abbott",
+  "binance",
+  "papara",
+  "vodafone",
+  "eclipse",
+  "polkadot",
+  "amc",
 ];
 
 const page = () => {
@@ -36,9 +51,15 @@ const page = () => {
         <h1 className="about-content__title">About</h1>
         <p className="about-content__descr">
           We design brands, products and digital experiences for ambitious
-          teams.
+          companies.
         </p>
-        <Image src={"/img/about/studio.webp"} width={1528} height={1000} className="about-content__img" alt="team" />
+        <Image
+          src={"/img/about/studio.webp"}
+          width={1528}
+          height={1000}
+          className="about-content__img"
+          alt="team"
+        />
       </section>
 
       <section className="about-studio">
@@ -49,7 +70,12 @@ const page = () => {
             production-ready systems.
           </p>
           <p>We combine product thinking, visual design and execution.</p>
-          <Image src={"/img/about/team.webp"} width={1011} height={1011} alt="studio" />
+          <Image
+            src={"/img/about/team.webp"}
+            width={1011}
+            height={1011}
+            alt="studio"
+          />
         </div>
       </section>
 
@@ -82,7 +108,13 @@ const page = () => {
       <ul className="about-partners">
         {partners.map((src, idx) => (
           <li key={idx}>
-            <Image src={src} width={100} height={100} alt="" className="marquee__item" />
+            <Image
+              src={`/img/home/partners/${src}.svg`}
+              width={100}
+              height={100}
+              alt=""
+              className="marquee__item"
+            />
           </li>
         ))}
         <li>
@@ -107,29 +139,61 @@ const page = () => {
         </div>
       </section>
 
-      <TestimonialsSlider additionalClass="about-testimonials" testimonials={testimonialsList} />
+      <TestimonialsSlider
+        additionalClass="about-testimonials"
+        testimonials={testimonialsList}
+      />
 
       <LetsBuild />
 
       <section className="about-projects">
         <BorderedTitle>Last Projects</BorderedTitle>
         <nav className="about-projects__list">
-          <Link href='#' className="about-projects__item about-projects__item--small">
-            <div className="about-projects__item-info" style={{ '--info-color': '#8CE85F' }}>
+          <Link
+            href="#"
+            className="about-projects__item about-projects__item--small"
+          >
+            <div
+              className="about-projects__item-info"
+              style={{ "--info-color": "#8CE85F" }}
+            >
               <b>ApeAI</b>
               <span>AI-powered workflow system for modern teams.</span>
             </div>
-            <video src="/videos/ApeAi.webm" poster="/img/works/ApeAi.webp" autoPlay muted loop playsInline className="about-projects__item-video"/>
+            <video
+              src="/videos/ApeAi.webm"
+              poster="/img/works/ApeAi.webp"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="about-projects__item-video"
+            />
           </Link>
-          <Link href='#' className="about-projects__item about-projects__item--big">
-            <div className="about-projects__item-info" style={{ '--info-color': '#F23111' }}>
+          <Link
+            href="#"
+            className="about-projects__item about-projects__item--big"
+          >
+            <div
+              className="about-projects__item-info"
+              style={{ "--info-color": "#F23111" }}
+            >
               <b>Vodafone</b>
               <span>Creative campaign and digital experience.</span>
             </div>
-            <video src="/videos/Vodafone.webm" autoPlay muted loop playsInline  className="about-projects__item-video"/>
+            <video
+              src="/videos/Vodafone.webm"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="about-projects__item-video"
+            />
           </Link>
         </nav>
-        <Link href='work' className="about-projects__more">See more works</Link>
+        <Link href="work" className="about-projects__more">
+          See more works
+        </Link>
       </section>
     </main>
   );

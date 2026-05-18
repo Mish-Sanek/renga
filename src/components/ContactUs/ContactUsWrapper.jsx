@@ -192,7 +192,7 @@ const ContactUsWrapper = () => {
     <>
       <article className="contact-us">
         <div className="contact-us__container">
-          <h1 className="contact-us__title">Write to Renua</h1>
+          <h1 className="contact-us__title">Let’s build something meaningful.</h1>
           <p className="contact-us__descr">
             We&apos;d love to hear from you and your team
           </p>

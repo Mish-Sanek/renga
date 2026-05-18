@@ -53,6 +53,11 @@
   border-radius: 30px;
   color: #ffffff;
   background-color: #0d0d0d;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: #A6A6A6;
 }
 
 .slider-dots {

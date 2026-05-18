@@ -9,6 +9,29 @@ import WorksTrippleGallery from "@/components/Works/WorksTrippleGallery/WorksTri
 import WorksTrippleGallerySmall from "@/components/Works/WorksTrippleGallerySmall/WorksTrippleGallerySmall";
 import React from "react";
 
+export const metadata = {
+  title: "Cruz — Fintech App Branding & Product Design | Renua",
+
+  description:
+    "A mobile fintech experience combining product design, motion systems and expressive visual identity for digital finance products.",
+
+  keywords: [
+    "fintech app design",
+    "mobile banking UI",
+    "digital finance branding",
+    "financial product identity",
+    "product design for fintech startups",
+    "motion and illustration system",
+  ],
+
+  openGraph: {
+    title: "Cruz — Fintech App Branding & Product Design | Renua",
+
+    description:
+      "A mobile fintech experience combining product design, motion systems and expressive visual identity.",
+  },
+};
+
 const descriptionData = {
   hiddenTitle: "cruz renua",
 

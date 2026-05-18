@@ -9,6 +9,29 @@ import WorkSingleMedia from "@/components/Works/WorkSingleMedia";
 import WorksDoubleGallery from "@/components/Works/WorksDoubleGallery";
 import LastProjects from "@/components/LastProjects";
 
+export const metadata = {
+  title: "Freedom Finance — Fintech Product Design & Branding | Renua",
+
+  description:
+    "A fintech product experience combining branding, motion systems, digital interfaces and 3D visual storytelling for modern financial platforms.",
+
+  keywords: [
+    "fintech product design",
+    "digital banking experience",
+    "financial platform branding",
+    "fintech UI UX",
+    "motion design for fintech",
+    "3D product visualization",
+  ],
+
+  openGraph: {
+    title: "Freedom Finance — Fintech Product Design & Branding | Renua",
+
+    description:
+      "A fintech product experience combining branding, motion systems, digital interfaces and 3D visual storytelling.",
+  },
+};
+
 const descriptionData = {
   hiddenTitle: "freedom finance renua",
 

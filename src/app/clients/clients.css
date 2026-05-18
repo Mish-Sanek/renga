@@ -109,6 +109,17 @@
   margin-top: 20px;
   font-size: 20px;
   color: #84858c;
+  white-space: pre-line;
+}
+
+@media(min-width: 2380px) {
+  .clients-collaborations__item b {
+    font-size: 38px;
+  }
+
+  .clients-collaborations__item p {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 1199px) {

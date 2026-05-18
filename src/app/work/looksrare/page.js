@@ -8,6 +8,29 @@ import WorkSingleMedia from '@/components/Works/WorkSingleMedia';
 import WorksTrippleGallery from '@/components/Works/WorksTrippleGallery/WorksTrippleGallery';
 import WorksTrippleRowGallery from '@/components/Works/WorksTrippleRowGallery';
 
+export const metadata = {
+  title: "LooksRare — NFT Marketplace Product Design & Branding | Renua",
+
+  description:
+    "A digital marketplace experience combining branding, UI systems and motion design for modern Web3 communities.",
+
+  keywords: [
+    "NFT marketplace design",
+    "Web3 branding",
+    "crypto product design",
+    "marketplace UI UX",
+    "digital asset platform",
+    "motion design for Web3",
+  ],
+
+  openGraph: {
+    title: "LooksRare — NFT Marketplace Product Design & Branding | Renua",
+
+    description:
+      "A digital marketplace experience combining branding, UI systems and motion design.",
+  },
+};
+
 const descriptionData = {
   hiddenTitle: "looksrare renua",
 

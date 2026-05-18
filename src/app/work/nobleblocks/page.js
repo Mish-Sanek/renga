@@ -6,6 +6,29 @@ import WorksContent from "@/components/Works/WorksContent/WorksContent";
 import WorkSingleMedia from "@/components/Works/WorkSingleMedia";
 import WorksTrippleGallery from "@/components/Works/WorksTrippleGallery/WorksTrippleGallery";
 
+export const metadata = {
+  title: "Nobleblocks — Blockchain Publishing Platform Design | Renua",
+
+  description:
+    "A blockchain publishing platform combining branding, product systems and scalable digital experiences for scientific publishing.",
+
+  keywords: [
+    "blockchain platform design",
+    "scientific publishing platform",
+    "Web3 product design",
+    "SaaS product design",
+    "digital publishing system",
+    "blockchain branding",
+  ],
+
+  openGraph: {
+    title: "Nobleblocks — Blockchain Publishing Platform Design | Renua",
+
+    description:
+      "A blockchain publishing platform designed for scalable scientific publishing systems.",
+  },
+};
+
 const descriptionData = {
   hiddenTitle: "nobleblocks renua",
 
