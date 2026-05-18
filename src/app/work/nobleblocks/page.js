@@ -181,7 +181,7 @@ const page = () => {
         />
         <WorkSingleMedia item={galleryItem14} />
 
-        <LastProjects />
+        <LastProjects smallItemTitle="NVO" bigItemTitle="Vodafone" />
       </WorksContent>
     </main>
   );

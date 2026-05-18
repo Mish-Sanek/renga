@@ -246,7 +246,7 @@ const page = () => {
           isReversed={true}
         />
         <WorksTrippleRowGallery items={galleryItem26} />
-        <LastProjects />
+        <LastProjects smallItemTitle="Looksrare" bigItemTitle="Nobleblocks" />
       </WorksContent>
     </main>
   );

@@ -7,6 +7,7 @@ import LetsBuild from "@/components/LetsBuild/LetsBuild";
 import BorderedTitle from "@/components/BorderedTitle/BorderedTitle";
 
 import { testimonialsList } from "@/lib/reviews";
+import LastProjects from "@/components/LastProjects";
 
 export const metadata = {
   title: "Clients — AI, Fintech & Technology Companies | Renua",
@@ -146,55 +147,7 @@ const page = () => {
 
       <LetsBuild />
 
-      <section className="about-projects">
-        <BorderedTitle>Last Projects</BorderedTitle>
-        <nav className="about-projects__list">
-          <Link
-            href="#"
-            className="about-projects__item about-projects__item--small"
-          >
-            <div
-              className="about-projects__item-info"
-              style={{ "--info-color": "#8CE85F" }}
-            >
-              <b>ApeAI</b>
-              <span>AI-powered workflow system for modern teams.</span>
-            </div>
-            <video
-              src="/videos/ApeAi.webm"
-              poster="/img/works/ApeAi.webp"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="about-projects__item-video"
-            />
-          </Link>
-          <Link
-            href="#"
-            className="about-projects__item about-projects__item--big"
-          >
-            <div
-              className="about-projects__item-info"
-              style={{ "--info-color": "#F23111" }}
-            >
-              <b>Vodafone</b>
-              <span>Creative campaign and digital experience.</span>
-            </div>
-            <video
-              src="/videos/Vodafone.webm"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="about-projects__item-video"
-            />
-          </Link>
-        </nav>
-        <Link href="work" className="about-projects__more">
-          See more works
-        </Link>
-      </section>
+      <LastProjects smallItemTitle="Freedom Finance Bank" bigItemTitle="Vodafone" />
     </main>
   );
 };

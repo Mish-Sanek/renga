@@ -156,7 +156,7 @@ const page = () => {
           descr={`The final system combined branding, motion and product design into a unified experience built for modern digital communities.`}
         />
         <WorkSingleMedia item={galleryItem16} />
-        <LastProjects />
+        <LastProjects smallItemTitle="Freedom Finance - Cards Series" bigItemTitle="Vodafone" />
       </WorksContent>
     </main>
   )

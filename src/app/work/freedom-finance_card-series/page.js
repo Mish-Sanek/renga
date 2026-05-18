@@ -129,7 +129,7 @@ const page = () => {
           descr={`industrial design aesthetics, motion and visual experimentation into a more expressive interpretation of modern financial products.`}
         />
         <WorkSingleMedia item={galleryItem7} />
-        <LastProjects />
+        <LastProjects smallItemTitle="NVO" bigItemTitle="ApeAi" isReversed={true} />
       </WorksContent>
     </main>
   );

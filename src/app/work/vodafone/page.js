@@ -156,7 +156,7 @@ const page = () => {
           descr={`The product experience focused on accessibility, hierarchy and speed — helping users navigate complex financial tools more intuitively.`}
         />
         <WorksTrippleGallery items={galleryItems13} />
-        <LastProjects />
+        <LastProjects smallItemTitle="Freedom Finance - Cards Series" bigItemTitle="Looksrare" />
       </WorksContent>
     </main>
   );

@@ -156,7 +156,7 @@ const page = () => {
           descr={`The final system combined product, branding and motion into a unified financial experience built for scale.`}
         />
         <WorkSingleMedia item={galleryItem11} />
-        <LastProjects />
+        <LastProjects smallItemTitle="NVO" bigItemTitle="Cruz" />
       </WorksContent>
     </main>
   );

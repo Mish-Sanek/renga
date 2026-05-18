@@ -2,25 +2,128 @@ import styles from "./style.module.css";
 import Link from "next/link";
 import BorderedTitle from "../BorderedTitle/BorderedTitle";
 
-const LastProjects = () => {
+const variants = [
+  {
+    title: "Freedom Finance Bank",
+    descr:
+      "Bank card design exploring modern fintech identity and digital aesthetics.",
+    bgColor: "#8CE85F",
+    textColor: "#ffffff",
+    posterUrl: "/img/last-projects/freedom-finance-poster.jpg",
+    videoUrl: "",
+    link: '/work/freedom-finance',
+  },
+  {
+    title: "Vodafone",
+    descr:
+      "Expressive illustration and motion campaign for a global telecom brand.",
+    bgColor: "#F23111",
+    textColor: "#ffffff",
+    posterUrl: "/img/last-projects/vodafone-poster.jpg",
+    videoUrl: "",
+    link: '/work/vodafone',
+  },
+  {
+    title: "NVO",
+    descr:
+      "Trading experience combining motion systems, product design and fintech branding.",
+    bgColor: "#2E4BB6",
+    textColor: "#FFFFFF",
+    posterUrl: "/img/last-projects/nvo-poster.jpg",
+    videoUrl: "",
+    link: '/work/nvo',
+  },
+  {
+    title: "Cruz",
+    descr:
+      "Digital banking product combining motion, identity and product systems.",
+    bgColor: "#E13ECC",
+    textColor: "#ffffff",
+    posterUrl: "/img/last-projects/cruz-poster.jpg",
+    videoUrl: "",
+    link: '/work/cruz',
+  },
+  {
+    title: "Freedom Finance - Cards Series",
+    descr:
+      "A cinematic fintech card experience built through 3D visuals and product identity.",
+    bgColor: "#34965F",
+    textColor: "#ffffff",
+    posterUrl: "/img/last-projects/freedom-finance-cards-poster.jpg",
+    videoUrl: "",
+    link: '/work/freedom-finance_card-series',
+  },
+  {
+    title: "Looksrare",
+    descr:
+      "Web3 marketplace product blending motion, identity and community-driven design.",
+    bgColor: "#97F574",
+    textColor: "#ffffff",
+    posterUrl: "/img/last-projects/looksrare-poster.jpg",
+    videoUrl: "/img/last-projects/",
+    link: '/work/looksrare',
+  },
+  {
+    title: "Nobleblocks",
+    descr:
+      "A Web3 publishing ecosystem designed for modern scientific collaboration.",
+    bgColor: "#BB87E0",
+    textColor: "#ffffff",
+    posterUrl: "/img/last-projects/nobleblocks-poster.jpg",
+    videoUrl: "",
+    link: '/work/nobleblocks',
+  },
+  {
+    title: "ApeAi",
+    descr:
+      "Digital product system built around AI-assisted workflows and team productivity.",
+    bgColor: "#232323",
+    textColor: "#ffffff",
+    posterUrl: "/img/last-projects/ApeAi-poster.jpg",
+    videoUrl: "",
+    link: '#',
+  },
+];
+
+const findVariantByTitle = (title) => {
+  return variants.find((v) => v.title.toLowerCase() === title.toLowerCase());
+};
+
+const LastProjects = ({
+  smallItemTitle = "ApeAi",
+  bigItemTitle = "Vodafone",
+  isReversed = false,
+}) => {
+  const smallVariant = findVariantByTitle(smallItemTitle);
+  const bigVariant = findVariantByTitle(bigItemTitle);
+
+  const smallData = smallVariant || variants[0];
+  const bigData = bigVariant || variants[1];
+
+  const navClassName = `${styles.lastProjects__list} ${isReversed ? styles["lastProjects__list--reversed"] : ""}`;
+
   return (
     <section className={styles.lastProjects}>
       <BorderedTitle>Last Project</BorderedTitle>
-      <nav className={styles.lastProjects__list}>
+      <nav className={navClassName}>
         <Link
-          href="#"
-          className={styles.lastProjects__item + ' ' + styles['lastProjects__item--small']}
+          href={smallData.link}
+          className={
+            styles.lastProjects__item +
+            " " +
+            styles["lastProjects__item--small"]
+          }
         >
           <div
             className={styles.lastProjects__itemInfo}
-            style={{ "--info-color": "#8CE85F" }}
+            style={{ "--bg-color": smallData.bgColor,  "--text-color": smallData.textColor}}
           >
-            <b>ApeAI</b>
-            <span>AI-powered workflow system for modern teams.</span>
+            <b>{smallData.title}</b>
+            <span>{smallData.descr}</span>
           </div>
           <video
-            src="/img/home/works/Freedomfinance.webm"
-            poster="/img/home/works/Freedomfinance-poster.jpg"
+            src={smallData.videoUrl === "" ? null : smallData.videoUrl}
+            poster={smallData.posterUrl}
             autoPlay
             playsInline
             muted
@@ -28,19 +131,21 @@ const LastProjects = () => {
           />
         </Link>
         <Link
-          href="#"
-          className={styles.lastProjects__item + ' ' + styles['lastProjects__item--big']}
+          href={bigData.link}
+          className={
+            styles.lastProjects__item + " " + styles["lastProjects__item--big"]
+          }
         >
           <div
             className={styles.lastProjects__itemInfo}
-            style={{ "--info-color": "#F23111" }}
+            style={{ "--bg-color": bigData.bgColor,  "--text-color": bigData.textColor}}
           >
-            <b>Vodafone</b>
-            <span>Creative campaign and digital experience.</span>
+            <b>{bigData.title}</b>
+            <span>{bigData.descr}</span>
           </div>
           <video
-            src="/img/home/works/vodafone.webm"
-            poster="/img/home/works/vodafone.jpg"
+            src={smallData.videoUrl === "" ? null : smallData.videoUrl}
+            poster={bigData.posterUrl}
             autoPlay
             playsInline
             muted
@@ -48,7 +153,7 @@ const LastProjects = () => {
           />
         </Link>
       </nav>
-      <Link href="work" className={styles.lastProjects__more}>
+      <Link href="/work" className={styles.lastProjects__more}>
         See more works
       </Link>
     </section>
@@ -56,3 +161,62 @@ const LastProjects = () => {
 };
 
 export default LastProjects;
+
+// import styles from "./style.module.css";
+// import Link from "next/link";
+// import BorderedTitle from "../BorderedTitle/BorderedTitle";
+
+// const LastProjects = () => {
+//   return (
+//     <section className={styles.lastProjects}>
+//       <BorderedTitle>Last Project</BorderedTitle>
+//       <nav className={styles.lastProjects__list}>
+//         <Link
+//           href="#"
+//           className={styles.lastProjects__item + ' ' + styles['lastProjects__item--small']}
+//         >
+//           <div
+//             className={styles.lastProjects__itemInfo}
+//             style={{ "--info-color": "#8CE85F" }}
+//           >
+//             <b>ApeAI</b>
+//             <span>AI-powered workflow system for modern teams.</span>
+//           </div>
+//           <video
+//             src="/img/home/works/Freedomfinance.webm"
+//             poster="/img/home/works/Freedomfinance-poster.jpg"
+//             autoPlay
+//             playsInline
+//             muted
+//             loop
+//           />
+//         </Link>
+//         <Link
+//           href="#"
+//           className={styles.lastProjects__item + ' ' + styles['lastProjects__item--big']}
+//         >
+//           <div
+//             className={styles.lastProjects__itemInfo}
+//             style={{ "--info-color": "#F23111" }}
+//           >
+//             <b>Vodafone</b>
+//             <span>Creative campaign and digital experience.</span>
+//           </div>
+//           <video
+//             src="/img/home/works/vodafone.webm"
+//             poster="/img/home/works/vodafone.jpg"
+//             autoPlay
+//             playsInline
+//             muted
+//             loop
+//           />
+//         </Link>
+//       </nav>
+//       <Link href="work" className={styles.lastProjects__more}>
+//         See more works
+//       </Link>
+//     </section>
+//   );
+// };
+
+// export default LastProjects;

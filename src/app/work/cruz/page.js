@@ -140,7 +140,7 @@ const page = () => {
         />
         <WorkSingleMedia item={galleryItem11} />
         <WorkSingleMedia item={galleryItem12} />
-        <LastProjects />
+        <LastProjects smallItemTitle="Freedom Finance Bank" bigItemTitle="Nobleblocks" isReversed={true} />
       </WorksContent>
     </main>
   );
