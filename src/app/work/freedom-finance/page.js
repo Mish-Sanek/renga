@@ -62,54 +62,54 @@ const descriptionData = {
 };
 
 const galleryItems1 = [
-  { src: "", poster: "/img/works/freedom-finance/gallery1-1poster.jpg" },
-  { src: "/img/works/freedom-finance/gallery1-2.jpg", poster: null },
-  { src: "/img/works/freedom-finance/gallery1-3.jpg", poster: null },
+  { src: "/img/works/freedom-finance/gallery1-1.webm", poster: "/img/works/freedom-finance/gallery1-1poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery1-2.webp", poster: null },
+  { src: "/img/works/freedom-finance/gallery1-3.webp", poster: null },
 ];
 
 const galleryItems2 = [
   { src: "", poster: "/img/works/freedom-finance/gallery2-1poster.jpg" },
-  { src: "", poster: "/img/works/freedom-finance/gallery2-2poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery2-2.webm", poster: "/img/works/freedom-finance/gallery2-2poster.jpg" },
   { src: "/img/works/freedom-finance/gallery2-3.svg", poster: null },
 ];
 
 const galleryItems3 = [
-  { src: "/img/works/freedom-finance/gallery3-1.jpg", poster: null },
-  { src: "/img/works/freedom-finance/gallery3-2.svg", poster: null },
-  { src: "", poster: "/img/works/freedom-finance/gallery3-3poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery3-1.webp", poster: null },
+  { src: "/img/works/freedom-finance/gallery3-2.webp", poster: null },
+  { src: "gallery3-3.webm", poster: "/img/works/freedom-finance/gallery3-3poster.jpg" },
 ];
 
-const galleryItem4 = {src: "/img/works/freedom-finance/gallery4.jpg", poster: null}
+const galleryItem4 = {src: "/img/works/freedom-finance/gallery4.webp", poster: null}
 
 const galleryItems5 = [
-  { src: "", poster: "/img/works/freedom-finance/gallery5-1poster.jpg" },
-  { src: "", poster: "/img/works/freedom-finance/gallery5-2poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery5-1.webm", poster: "/img/works/freedom-finance/gallery5-1poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery5-2.webm", poster: "/img/works/freedom-finance/gallery5-2poster.jpg" },
   { src: "", poster: "/img/works/freedom-finance/gallery5-3poster.jpg" },
 ];
 
 const galleryItems6 = [
-  { src: "", poster: "/img/works/freedom-finance/gallery6-1poster.jpg" },
-  { src: "", poster: "/img/works/freedom-finance/gallery6-2poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery6-1.webm", poster: "/img/works/freedom-finance/gallery6-1poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery6-2.webm", poster: "/img/works/freedom-finance/gallery6-2poster.jpg" },
   { src: "", poster: "/img/works/freedom-finance/gallery6-3poster.jpg" },
 ];
 
 const galleryItems7 = [
-  { src: "", poster: "/img/works/freedom-finance/gallery7-1poster.jpg" },
-  { src: "", poster: "/img/works/freedom-finance/gallery7-2poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery7-1.webm", poster: "/img/works/freedom-finance/gallery7-1poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery7-2.webm", poster: "/img/works/freedom-finance/gallery7-2poster.jpg" },
   { src: "/img/works/freedom-finance/gallery7-3.jpg", poster: null },
 ];
 
-const galleryItem8 = {src: "/img/works/freedom-finance/gallery8.jpg", poster: null}
+const galleryItem8 = {src: "/img/works/freedom-finance/gallery8.webp", poster: null}
 
 const galleryItems9 = [
-  { src: "", poster: "/img/works/freedom-finance/gallery9-1poster.jpg" },
-  { src: "", poster: "/img/works/freedom-finance/gallery9-2poster.jpg" },
-  { src: "", poster: "/img/works/freedom-finance/gallery9-3poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery9-1.webm", poster: "/img/works/freedom-finance/gallery9-1poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery9-2.webm", poster: "/img/works/freedom-finance/gallery9-2poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery9-3.webm", poster: "/img/works/freedom-finance/gallery9-3poster.jpg" },
 ];
 
 const galleryItems10 = [
   { src: "/img/works/freedom-finance/gallery10-1.svg", poster: null},
-  { src: "/img/works/freedom-finance/gallery10-2.jpg", poster: null},
+  { src: "/img/works/freedom-finance/gallery10-2.webp", poster: null},
 ];
 
 const galleryItem11 = {src: "", poster: "/img/works/freedom-finance/gallery11.jpg"}
@@ -123,7 +123,7 @@ const page = () => {
           "Designing a modern financial experience for a new generation of investors."
         }
         posterUrl={"/img/works/freedom-finance/hero-poster.jpg"}
-        videoUrl={null}
+        videoUrl={"/img/works/freedom-finance/hero-video.webm"}
       />
 
       <WorksContent>

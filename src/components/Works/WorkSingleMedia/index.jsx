@@ -7,7 +7,7 @@ const WorkSingleMedia = ({ item }) => {
       {item.poster !== null ? (
         <video
         className={styles.singleMedia}
-          src={null}
+          src={item.src !== "" ? item.src : null}
           poster={item.poster}
           autoPlay
           muted

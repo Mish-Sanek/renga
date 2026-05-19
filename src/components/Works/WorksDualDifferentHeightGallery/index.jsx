@@ -9,7 +9,7 @@ const WorksDualDifferentHeightGallery = ({items}) => {
         <div key={item.src} className={styles.mediaWrapper}>
           {item.poster ? (
             <video
-              src={null}
+              src={item.src !== "" ? item.src : null}
               poster={item.poster}
               autoPlay
               muted

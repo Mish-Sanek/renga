@@ -101,7 +101,7 @@ const page = () => {
           "A conceptual card series exploring the intersection of finance, identity and product aesthetics"
         }
         posterUrl={"/img/works/freedom-finance-cards/hero-poster.jpg"}
-        videoUrl={null}
+        videoUrl={"/img/works/freedom-finance-cards/hero-video.webm"}
       />
 
       <WorksContent>

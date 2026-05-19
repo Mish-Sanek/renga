@@ -10,7 +10,7 @@ const WorksTrippleGallerySmall = ({items}) => {
         <div key={index} className={styles.mediaWrapper}>
           {item.poster !== null ? (
             <video
-              src={null}
+              src={item.src !== "" ? item.src : null}
               poster={item.poster}
               autoPlay
               muted
