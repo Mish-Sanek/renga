@@ -54,42 +54,52 @@ const descriptionData = {
 };
 
 const galleryItems1 = [
-  { src: "", poster: "/img/works/freedom-finance-cards/gallery1-1poster.jpg" },
-  { src: "/img/works/freedom-finance-cards/gallery1-2.jpg", poster: null },
-  { src: "/img/works/freedom-finance-cards/gallery1-3.jpg", poster: null },
+  { src: "/img/works/freedom-finance-cards/gallery1-1.webm", poster: "/img/works/freedom-finance-cards/gallery1-1poster.jpg" },
+  { src: "/img/works/freedom-finance-cards/gallery1-2.webp", poster: null },
+  { src: "/img/works/freedom-finance-cards/gallery1-3.webp", poster: null },
 ];
 
 const galleryItems2 = [
-  { src: "", poster: "/img/works/freedom-finance-cards/gallery2-1poster.jpg" },
-  { src: "/img/works/freedom-finance-cards/gallery2-2.jpg", poster: null },
-  { src: "/img/works/freedom-finance-cards/gallery2-3.jpg", poster: null },
+  { src: "/img/works/freedom-finance-cards/gallery2-1.webm", poster: "/img/works/freedom-finance-cards/gallery2-1poster.jpg" },
+  { src: "/img/works/freedom-finance-cards/gallery2-2.webp", poster: null },
+  { src: "/img/works/freedom-finance-cards/gallery2-3.webp", poster: null },
 ];
 
 const galleryItem3 = {
-  src: "",
+  src: "/img/works/freedom-finance-cards/gallery3.webm",
   poster: "/img/works/freedom-finance-cards/gallery3-poster.jpg",
 };
 
 const galleryItems4 = [
-  { src: "/img/works/freedom-finance-cards/gallery4-1.jpg", poster: null },
-  { src: "/img/works/freedom-finance-cards/gallery4-2.jpg", poster: null },
-  { src: "", poster: "/img/works/freedom-finance-cards/gallery4-3poster.jpg" },
+  { src: "/img/works/freedom-finance-cards/gallery4-1.webp", poster: null },
+  { src: "/img/works/freedom-finance-cards/gallery4-2.webp", poster: null },
+  { src: "/img/works/freedom-finance-cards/gallery4-3.webm", poster: "/img/works/freedom-finance-cards/gallery4-3poster.jpg" },
 ];
 
 const galleryItems5 = [
-  { src: "/img/works/freedom-finance-cards/gallery5-1.jpg", poster: null },
-  { src: "/img/works/freedom-finance-cards/gallery5-2.jpg", poster: null },
+  { src: "/img/works/freedom-finance-cards/gallery5-1.webp", poster: null },
+  { src: "/img/works/freedom-finance-cards/gallery5-2.webm", poster: "/img/works/freedom-finance-cards/gallery5-2.webp" },
   { src: "", poster: "/img/works/freedom-finance-cards/gallery5-3poster.jpg" },
 ];
 
 const galleryItems6 = [
-  { src: "/img/works/freedom-finance-cards/gallery6-1.jpg", poster: null },
-  { src: "/img/works/freedom-finance-cards/gallery6-2.jpg", poster: null },
+  { src: "/img/works/freedom-finance-cards/gallery6-1.webp", poster: null },
+  { src: "/img/works/freedom-finance-cards/gallery6-2.webp", poster: null },
 ];
 
 const galleryItem7 = {
-  src: "",
+  src: "/img/works/freedom-finance-cards/gallery7.webm",
   poster: "/img/works/freedom-finance-cards/gallery7-poster.jpg",
+};
+
+const galleryItem8 = {
+  src: "/img/works/freedom-finance-cards/gallery8.webm",
+  poster: "/img/works/freedom-finance-cards/gallery8-poster.jpg",
+};
+
+const galleryItem9 = {
+  src: "/img/works/freedom-finance-cards/gallery9.webm",
+  poster: "/img/works/freedom-finance-cards/gallery9-poster.jpg",
 };
 
 const page = () => {
@@ -129,6 +139,8 @@ const page = () => {
           descr={`industrial design aesthetics, motion and visual experimentation into a more expressive interpretation of modern financial products.`}
         />
         <WorkSingleMedia item={galleryItem7} />
+        <WorkSingleMedia item={galleryItem8} />
+        <WorkSingleMedia item={galleryItem9} />
         <LastProjects smallItemTitle="NVO" bigItemTitle="ApeAi" isReversed={true} />
       </WorksContent>
     </main>
