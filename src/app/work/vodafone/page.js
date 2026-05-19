@@ -62,7 +62,7 @@ const descriptionData = {
 const galleryItems1 = [
   { src: "/img/works/vodafone/gallery1-1.jpg", poster: null },
   { src: "/img/works/vodafone/gallery1-2.jpg", poster: null },
-  { src: "/img/works/vodafone/gallery1.webm", poster: "/img/works/vodafone/gallery1-3poster.jpg" },
+  { src: "/img/works/vodafone/gallery1-3.webm", poster: "/img/works/vodafone/gallery1-3poster.jpg" },
 ];
 
 const galleryItem2 = {src: "/img/works/vodafone/gallery2.webp", poster: null}
@@ -98,7 +98,7 @@ const galleryItems11 = [
 ]
 
 const galleryItems12 = [
-  { src: "", poster: "/img/works/vodafone/gallery12-1poster.jpg" },
+  { src: "/img/works/vodafone/gallery12-1.webm", poster: "/img/works/vodafone/gallery12-1poster.jpg" },
   { src: "/img/works/vodafone/gallery12-2.webp", poster: null },
   { src: "/img/works/vodafone/gallery12-3.webp", poster: null },
 ]
