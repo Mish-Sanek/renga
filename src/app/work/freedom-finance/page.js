@@ -68,7 +68,7 @@ const galleryItems1 = [
 ];
 
 const galleryItems2 = [
-  { src: "", poster: "/img/works/freedom-finance/gallery2-1poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery2-1.webm", poster: "/img/works/freedom-finance/gallery2-1poster.jpg" },
   { src: "/img/works/freedom-finance/gallery2-2.webm", poster: "/img/works/freedom-finance/gallery2-2poster.jpg" },
   { src: "/img/works/freedom-finance/gallery2-3.svg", poster: null },
 ];
@@ -84,13 +84,13 @@ const galleryItem4 = {src: "/img/works/freedom-finance/gallery4.webp", poster: n
 const galleryItems5 = [
   { src: "/img/works/freedom-finance/gallery5-1.webm", poster: "/img/works/freedom-finance/gallery5-1poster.jpg" },
   { src: "/img/works/freedom-finance/gallery5-2.webm", poster: "/img/works/freedom-finance/gallery5-2poster.jpg" },
-  { src: "", poster: "/img/works/freedom-finance/gallery5-3poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery5-3.webm", poster: "/img/works/freedom-finance/gallery5-3poster.jpg" },
 ];
 
 const galleryItems6 = [
   { src: "/img/works/freedom-finance/gallery6-1.webm", poster: "/img/works/freedom-finance/gallery6-1poster.jpg" },
   { src: "/img/works/freedom-finance/gallery6-2.webm", poster: "/img/works/freedom-finance/gallery6-2poster.jpg" },
-  { src: "", poster: "/img/works/freedom-finance/gallery6-3poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery6-3.webm", poster: "/img/works/freedom-finance/gallery6-3poster.jpg" },
 ];
 
 const galleryItems7 = [
@@ -112,7 +112,7 @@ const galleryItems10 = [
   { src: "/img/works/freedom-finance/gallery10-2.webp", poster: null},
 ];
 
-const galleryItem11 = {src: "", poster: "/img/works/freedom-finance/gallery11.jpg"}
+const galleryItem11 = {src: "/img/works/freedom-finance/gallery11.webm", poster: "/img/works/freedom-finance/gallery11.jpg"}
 
 const page = () => {
   return (

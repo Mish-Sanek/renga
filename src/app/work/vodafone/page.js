@@ -62,51 +62,51 @@ const descriptionData = {
 const galleryItems1 = [
   { src: "/img/works/vodafone/gallery1-1.jpg", poster: null },
   { src: "/img/works/vodafone/gallery1-2.jpg", poster: null },
-  { src: "", poster: "/img/works/vodafone/gallery1-3poster.jpg" },
+  { src: "/img/works/vodafone/gallery1.webm", poster: "/img/works/vodafone/gallery1-3poster.jpg" },
 ];
 
-const galleryItem2 = {src: "/img/works/vodafone/gallery2.jpg", poster: null}
+const galleryItem2 = {src: "/img/works/vodafone/gallery2.webp", poster: null}
 
 const galleryItems3 = [
-  { src: "/img/works/vodafone/gallery3-1.jpg", poster: null },
-  { src: "", poster: "/img/works/vodafone/gallery3-2poster.jpg" },
-  { src: "/img/works/vodafone/gallery3-3.png", poster: null },
+  { src: "/img/works/vodafone/gallery3-1.webp", poster: null },
+  { src: "/img/works/vodafone/gallery3-2.webm", poster: "/img/works/vodafone/gallery3-2poster.jpg" },
+  { src: "/img/works/vodafone/gallery3-3.webp", poster: null },
 ];
 
-const galleryItem4 = {src: "/img/works/vodafone/gallery4.jpg", poster: null}
+const galleryItem4 = {src: "/img/works/vodafone/gallery4.webp", poster: null}
 
-const galleryItem5 = {src: "/img/works/vodafone/gallery5.jpg", poster: null}
+const galleryItem5 = {src: "/img/works/vodafone/gallery5.webp", poster: null}
 
-const galleryItem6 = {src: "/img/works/vodafone/gallery6.svg", poster: null}
+const galleryItem6 = {src: "/img/works/vodafone/gallery6.webp", poster: null}
 
 const galleryItems7 = [
-  { src: "/img/works/vodafone/gallery7-1.jpg", poster: null },
-  { src: "/img/works/vodafone/gallery7-2.jpg", poster: null },
-  { src: "/img/works/vodafone/gallery7-3.jpg", poster: null },
+  { src: "/img/works/vodafone/gallery7-1.webp", poster: null },
+  { src: "/img/works/vodafone/gallery7-2.webp", poster: null },
+  { src: "/img/works/vodafone/gallery7-3.webp", poster: null },
 ]
 
-const galleryItem8 = {src: "/img/works/vodafone/gallery8.jpg", poster: null}
+const galleryItem8 = {src: "/img/works/vodafone/gallery8.webp", poster: null}
 
 const galleryItem9 = {src: "", poster: "/img/works/vodafone/gallery9poster.jpg"}
 
-const galleryItem10 = {src: "/img/works/vodafone/gallery10.jpg", poster: null}
+const galleryItem10 = {src: "/img/works/vodafone/gallery10.webp", poster: null}
 
 const galleryItems11 = [
-  { src: "/img/works/vodafone/gallery11-1.jpg", poster: null },
-  { src: "", poster: "/img/works/vodafone/gallery11-2poster.jpg" },
-  { src: "", poster: "/img/works/vodafone/gallery11-3poster.jpg" },
+  { src: "/img/works/vodafone/gallery11-1.webp", poster: null },
+  { src: "/img/works/vodafone/gallery11-2.webm", poster: "/img/works/vodafone/gallery11-2poster.jpg" },
+  { src: "/img/works/vodafone/gallery11-3.webm", poster: "/img/works/vodafone/gallery11-3poster.jpg" },
 ]
 
 const galleryItems12 = [
   { src: "", poster: "/img/works/vodafone/gallery12-1poster.jpg" },
-  { src: "/img/works/vodafone/gallery12-2.jpg", poster: null },
-  { src: "/img/works/vodafone/gallery12-3.jpg", poster: null },
+  { src: "/img/works/vodafone/gallery12-2.webp", poster: null },
+  { src: "/img/works/vodafone/gallery12-3.webp", poster: null },
 ]
 
 const galleryItems13 = [
-  { src: "/img/works/vodafone/gallery13-1.jpg", poster: null },
-  { src: "/img/works/vodafone/gallery13-2.jpg", poster: null },
-  { src: "", poster: "/img/works/vodafone/gallery13-3poster.jpg" },
+  { src: "/img/works/vodafone/gallery13-1.webp", poster: null },
+  { src: "/img/works/vodafone/gallery13-2.webp", poster: null },
+  { src: "/img/works/vodafone/gallery13-3.webm", poster: "/img/works/vodafone/gallery13-3poster.jpg" },
 ]
 
 const page = () => {
@@ -118,7 +118,6 @@ const page = () => {
           "Creating a flexible campaign system for a global telecommunications brand."
         }
         posterUrl={"/img/works/vodafone/hero-poster.jpg"}
-        videoUrl={null}
       />
 
       <WorksContent>

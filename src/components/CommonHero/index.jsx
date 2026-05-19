@@ -1,6 +1,6 @@
 import styles from './style.module.css'
 
-const CommonHero = ({title = null, descr, posterUrl, videoUrl}) => {
+const CommonHero = ({title = null, descr, posterUrl, videoUrl = null}) => {
 
   console.log(videoUrl)
   return (
