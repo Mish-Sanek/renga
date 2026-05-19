@@ -10,7 +10,7 @@ const WorksDiagonalGallery = ({ items }) => {
     return (
       <div className={styles.mediaWrapper} key={item.poster ? item.poster : item.src} style={{ aspectRatio: ratio }}>
         {item.poster ? (
-          <video src={null} poster={item.poster} autoPlay muted loop playsInline className={styles.media} />
+          <video src={item.src !== null ? item.src : null} poster={item.poster} autoPlay muted loop playsInline className={styles.media} />
         ) : (
           <Image src={item.src} width={758} height={isTall ? 850 : 580} alt="" className={styles.media} />
         )}

@@ -61,41 +61,43 @@ const descriptionData = {
 };
 
 const galleryItems1 = [
-  { src: "", poster: "/img/works/cruz/gallery1-1poster.jpg" },
-  { src: "/img/works/cruz/gallery1-2.jpg", poster: null },
-  { src: "/img/works/cruz/gallery1-3.jpg", poster: null },
+  { src: "/img/works/cruz/gallery1-1.webm", poster: "/img/works/cruz/gallery1-1poster.jpg" },
+  { src: "/img/works/cruz/gallery1-2.webp", poster: null },
+  { src: "/img/works/cruz/gallery1-3.webp", poster: null },
 ];
 
 const galleryItems2 = [
   { src: "/img/works/cruz/gallery2-1.svg", poster: null },
-  { src: "/img/works/cruz/gallery2-2.svg", poster: null },
-  { src: "/img/works/cruz/gallery2-3.svg", poster: null },
+  { src: "/img/works/cruz/gallery2-2.webp", poster: null },
+  { src: "/img/works/cruz/gallery2-3.webp", poster: null },
 ];
 
-const galleryItem3 = { src: "", poster: "/img/works/cruz/gallery3poster.jpg" };
+const galleryItem3 = { src: "/img/works/cruz/gallery3.webm", poster: "/img/works/cruz/gallery3poster.jpg" };
 
 const galleryItem4 = { src: "/img/works/cruz/gallery4.svg", poster: null };
 
 const galleryItems5 = [
-  { src: "/img/works/cruz/gallery5-1.jpg", poster: null },
-  { src: "", poster: "/img/works/cruz/gallery5-2poster.jpg" },
-  { src: "/img/works/cruz/gallery5-3.jpg", poster: null },
-  { src: "/img/works/cruz/gallery5-4.jpg", poster: null },
+  { src: "/img/works/cruz/gallery5-1.webp", poster: null },
+  { src: "/img/works/cruz/gallery5-2.webm", poster: "/img/works/cruz/gallery5-2poster.jpg" },
+  { src: "/img/works/cruz/gallery5-3.webp", poster: null },
+  { src: "/img/works/cruz/gallery5-4.webp", poster: null },
 ];
 
-const galleryItem6 = { src: "/img/works/cruz/gallery6.jpg", poster: null };
-const galleryItem7 = { src: "/img/works/cruz/gallery7.jpg", poster: null };
+const galleryItemTerminal = { src: "/img/works/cruz/terminal.webm", poster: "/img/works/cruz/terminal-poster.jpg" };
+
+const galleryItem6 = { src: "/img/works/cruz/gallery6.webp", poster: null };
+const galleryItem7 = { src: "/img/works/cruz/gallery7.webp", poster: null };
 
 const galleryItems8 = [
-  { src: "/img/works/cruz/gallery8-1.jpg", poster: null },
-  { src: "", poster: "/img/works/cruz/gallery8-2poster.jpg" },
-  { src: "", poster: "/img/works/cruz/gallery8-3poster.jpg" },
+  { src: "/img/works/cruz/gallery8-1.webp", poster: null },
+  { src: "/img/works/cruz/gallery8-2.webm", poster: "/img/works/cruz/gallery8-2poster.jpg" },
+  { src: "/img/works/cruz/gallery8-3.webm", poster: "/img/works/cruz/gallery8-3poster.jpg" },
 ];
 
-const galleryItem9 = { src: "/img/works/cruz/gallery9.jpg", poster: null };
-const galleryItem10 = { src: "/img/works/cruz/gallery10.jpg", poster: null };
-const galleryItem11 = { src: "", poster: "/img/works/cruz/gallery11poster.jpg" };
-const galleryItem12 = { src: "/img/works/cruz/gallery12.jpg", poster: null };
+const galleryItem9 = { src: "/img/works/cruz/gallery9.webp", poster: null };
+const galleryItem10 = { src: "/img/works/cruz/gallery10.webp", poster: null };
+const galleryItem11 = { src: "/img/works/cruz/gallery11.webm", poster: "/img/works/cruz/gallery11poster.jpg" };
+const galleryItem12 = { src: "/img/works/cruz/gallery12.webp", poster: null };
 
 const page = () => {
   return (
@@ -104,7 +106,7 @@ const page = () => {
         title={"Cruz"}
         descr="Designing a more expressive financial experience for a new generation of users."
         posterUrl={"/img/works/cruz/hero-poster.jpg"}
-        videoUrl={null}
+        videoUrl={"/img/works/cruz/hero-video.webm"}
       />
       <WorksContent>
         <WorkDescription data={descriptionData} />
@@ -121,6 +123,7 @@ const page = () => {
         />
         <WorkSingleMedia item={galleryItem4} />
         <WorksDualHeightGallery items={galleryItems5} />
+        <WorkSingleMedia item={galleryItemTerminal} />
         <WorkInsight
           title={"Product-first interaction design."}
           descr={`Designed for speed, clarity and accessibility across mobile interactions.`}
