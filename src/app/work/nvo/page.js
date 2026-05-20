@@ -3,10 +3,12 @@ import LastProjects from "@/components/LastProjects";
 import WorkDescription from "@/components/Works/WorkDescription";
 import WorkInsight from "@/components/Works/WorkInsight/WorkInsight";
 import WorksContent from "@/components/Works/WorksContent/WorksContent";
+import WorksDoubleDynamicGallery from "@/components/Works/WorksDoubleDynamicGallery";
 import WorksDualDifferentHeightGallery from "@/components/Works/WorksDualDifferentHeightGallery";
 import WorkSingleMedia from "@/components/Works/WorkSingleMedia";
 import WorksThirdSmallGallery from "@/components/Works/WorksThirdBigGallery";
 import WorksThirdEmptyGallery from "@/components/Works/WorksThirdEmptyGallery";
+import WorksTrippleGalleryFirstNull from "@/components/Works/WorksTrippleGalleryFirstNull";
 import WorksTrippleRowGallery from "@/components/Works/WorksTrippleRowGallery";
 
 export const metadata = {
@@ -61,87 +63,87 @@ const descriptionData = {
 };
 
 const galleryItem1 = {
-  src: "/img/works/nvo/gallery1.jpg",
-  poster: null,
+  src: "/img/works/nvo/gallery1.webm",
+  poster: "/img/works/nvo/gallery1.jpg",
 };
 
-const galleryItem2 = {
-  src: "/img/works/nvo/gallery2.jpg",
-  poster: null,
-};
+const galleryItems2 = [
+  {src: "/img/works/nvo/gallery2-1.jpg", poster: null, },
+  {src: "/img/works/nvo/gallery2-2.webm", poster: "/img/works/nvo/gallery2-2poster.jpg", },
+];
 
 const galleryItem3 = {
   src: "/img/works/nvo/gallery3.jpg",
-  poster: null,
+  poster: "/img/works/nvo/gallery3.webm",
 };
 
 const galleryItem4 = {
-  src: "/img/works/nvo/gallery4.jpg",
+  src: "/img/works/nvo/gallery4.webp",
   poster: null,
 };
 
 const galleryItem5 = {
-  src: "",
+  src: "/img/works/nvo/gallery5.webm",
   poster: "/img/works/nvo/gallery5poster.jpg",
 };
 
 const galleryItem6 = {
-  src: "",
+  src: "/img/works/nvo/gallery6.webm",
   poster: "/img/works/nvo/gallery6poster.jpg",
 };
 
 const galleryItem7 = {
-  src: "/img/works/nvo/gallery7.jpg",
+  src: "/img/works/nvo/gallery7.webp",
   poster: null,
 };
 
 const galleryItems8 = [
-  { src: "/img/works/nvo/gallery8-1.jpg", poster: null },
-  { src: "", poster: "/img/works/nvo/gallery8-2poster.jpg" },
+  { src: "/img/works/nvo/gallery8-1.webm", poster: "/img/works/nvo/gallery8-1.jpg" },
+  { src: "/img/works/nvo/gallery8-2.webm", poster: "/img/works/nvo/gallery8-2poster.jpg" },
 ];
 
 const galleryItem9 = {
-  src: "/img/works/nvo/gallery9.jpg",
-  poster: null,
+  src: "/img/works/nvo/gallery9.webm",
+  poster: "/img/works/nvo/gallery9.jpg",
 };
 
 const galleryItems10 = [
-  { src: "/img/works/nvo/gallery10-1.jpg", poster: null },
-  { src: "/img/works/nvo/gallery10-2.jpg", poster: null },
+  { src: "/img/works/nvo/gallery10-1.webm", poster: "/img/works/nvo/gallery10-1.jpg" },
+  { src: "/img/works/nvo/gallery10-2.webp", poster: null },
 ];
 
 const galleryItem11 = {
-  src: "",
+  src: "/img/works/nvo/gallery11.webm",
   poster: "/img/works/nvo/gallery11poster.jpg",
 };
 
 const galleryItem12 = {
-  src: "/img/works/nvo/gallery12.jpg",
-  poster: null,
+  src: "/img/works/nvo/gallery12.webm",
+  poster: "/img/works/nvo/gallery12.jpg",
 };
 
 const galleryItem13 = {
-  src: "/img/works/nvo/gallery13.jpg",
+  src: "/img/works/nvo/gallery13.webp",
   poster: null,
 };
 
 const galleryItem14 = {
-  src: "/img/works/nvo/gallery14.jpg",
-  poster: null,
+  src: "/img/works/nvo/gallery14.webm",
+  poster: "/img/works/nvo/gallery14.jpg",
 };
 
 const galleryItem15 = {
-  src: "/img/works/nvo/gallery15.jpg",
+  src: "/img/works/nvo/gallery15.webp",
   poster: null,
 };
 
 const galleryItem16 = {
-  src: "/img/works/nvo/gallery16.jpg",
-  poster: null,
+  src: "/img/works/nvo/gallery16.webm",
+  poster: "/img/works/nvo/gallery16.jpg",
 };
 
 const galleryItem17 = {
-  src: "",
+  src: "/img/works/nvo/gallery17.webm",
   poster: "/img/works/nvo/gallery17poster.jpg",
 };
 
@@ -151,45 +153,45 @@ const galleryItem18 = {
 };
 
 const galleryItem19 = {
-  src: "/img/works/nvo/gallery19.jpg",
+  src: "/img/works/nvo/gallery19.webp",
   poster: null,
 };
 
-const galleryItem20 = {
-  src: "/img/works/nvo/gallery20.svg",
-  poster: null,
-};
+const galleryItems20 = [
+  {src: "/img/works/nvo/gallery20-1.svg",poster: null, },
+  {src: "/img/works/nvo/gallery20-2.webm", poster: "/img/works/nvo/gallery20-2poster.jpg",},
+];
 
 const galleryItem21 = {
-  src: "",
+  src: "/img/works/nvo/gallery21.webm",
   poster: "/img/works/nvo/gallery21poster.jpg",
 };
 
 const galleryItem22 = {
-  src: "/img/works/nvo/gallery22.jpg",
+  src: "/img/works/nvo/gallery22.webp",
   poster: null,
 };
 
 const galleryItems23 = [
-  { src: "/img/works/nvo/gallery23-1.jpg", poster: null },
-  { src: "/img/works/nvo/gallery23-2.jpg", poster: null },
+  { src: "/img/works/nvo/gallery23-1.webp", poster: null },
+  { src: "/img/works/nvo/gallery23-2.webp", poster: null },
 ];
 
 const galleryItem24 = {
-  src: "/img/works/nvo/gallery24.jpg",
+  src: "/img/works/nvo/gallery24.webp",
   poster: null,
 };
 
 const galleryItem25 = {
-  src: "",
+  src: "/img/works/nvo/gallery25.webm",
   poster: "/img/works/nvo/gallery25poster.jpg",
 };
 
 const galleryItem26 = [
-  {src: "", poster: "/img/works/nvo/gallery26-1poster.jpg",},
-  {src: "", poster: "/img/works/nvo/gallery26-2poster.jpg",},
-  {src: "", poster: "/img/works/nvo/gallery26-3poster.jpg",},
-]
+  { src: "/img/works/nvo/gallery26-1.webm", poster: "/img/works/nvo/gallery26-1poster.jpg" },
+  { src: "/img/works/nvo/gallery26-2.webm", poster: "/img/works/nvo/gallery26-2poster.jpg" },
+  { src: "/img/works/nvo/gallery26-3.webm", poster: "/img/works/nvo/gallery26-3poster.jpg" },
+];
 
 const page = () => {
   return (
@@ -200,12 +202,12 @@ const page = () => {
           "Designing a more flexible digital ecosystem for a next-generation trading platform."
         }
         posterUrl={"/img/works/nvo/hero-poster.jpg"}
-        videoUrl={null}
+        videoUrl={"/img/works/nvo/hero-video.webm"}
       />
       <WorksContent>
         <WorkDescription data={descriptionData} />
         <WorkSingleMedia item={galleryItem1} />
-        <WorkSingleMedia item={galleryItem2} />
+        <WorksTrippleGalleryFirstNull items={galleryItems2} />
         <WorkSingleMedia item={galleryItem3} />
         <WorkSingleMedia item={galleryItem4} />
         <WorkSingleMedia item={galleryItem5} />
@@ -234,7 +236,7 @@ const page = () => {
         <WorkSingleMedia item={galleryItem17} />
         <WorkSingleMedia item={galleryItem18} />
         <WorkSingleMedia item={galleryItem19} />
-        <WorkSingleMedia item={galleryItem20} />
+        <WorksDoubleDynamicGallery items={galleryItems20} />
         <WorkSingleMedia item={galleryItem21} />
         <WorkSingleMedia item={galleryItem22} />
         <WorksThirdSmallGallery items={galleryItems23} />
