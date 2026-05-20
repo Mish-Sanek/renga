@@ -58,80 +58,80 @@ const descriptionData = {
 };
 
 const galleryItems1 = [
-  { src: "/img/works/nobleblocks/gallery1-1.jpg", poster: null },
-  { src: "/img/works/nobleblocks/gallery1-2.jpg", poster: null },
-  { src: "/img/works/nobleblocks/gallery1-3.jpg", poster: null },
+  { src: "/img/works/nobleblocks/gallery1-1.webp", poster: null },
+  { src: "/img/works/nobleblocks/gallery1-2.webp", poster: null },
+  { src: "/img/works/nobleblocks/gallery1-3.webp", poster: null },
 ];
 
 const galleryItems2 = [
-  { src: "/img/works/nobleblocks/gallery2-1.jpg", poster: null },
-  { src: "/img/works/nobleblocks/gallery2-2.jpg", poster: null },
-  { src: "", poster: "/img/works/nobleblocks/gallery2-3poster.jpg" },
+  { src: "/img/works/nobleblocks/gallery2-1.webp", poster: null },
+  { src: "/img/works/nobleblocks/gallery2-2.webp", poster: null },
+  { src: "/img/works/nobleblocks/gallery2-3.webm", poster: "/img/works/nobleblocks/gallery2-3poster.jpg" },
 ];
 
 const galleryItems3 = [
-  { src: "", poster: "/img/works/nobleblocks/gallery3-1poster.jpg" },
-  { src: "", poster: "/img/works/nobleblocks/gallery3-2poster.jpg" },
+  { src: "/img/works/nobleblocks/gallery3-1.webm", poster: "/img/works/nobleblocks/gallery3-1poster.jpg" },
+  { src: "/img/works/nobleblocks/gallery3-2.webm", poster: "/img/works/nobleblocks/gallery3-2poster.jpg" },
   { src: "/img/works/nobleblocks/gallery3-3.svg", poster: null },
 ];
 
 const galleryItems4 = [
-  { src: "/img/works/nobleblocks/gallery4-1.svg", poster: null },
-  { src: "/img/works/nobleblocks/gallery4-2.jpg", poster: null },
+  { src: "/img/works/nobleblocks/gallery4-1.webm", poster: "/img/works/nobleblocks/gallery4-1.svg" },
+  { src: "/img/works/nobleblocks/gallery4-2.webp", poster: null },
   { src: "/img/works/nobleblocks/gallery4-3.svg", poster: null },
 ];
 
 const galleryItem5 = {
-  src: "",
+  src: "/img/works/nobleblocks/gallery5.webm",
   poster: "/img/works/nobleblocks/gallery5poster.jpg",
 };
 
 const galleryItem6 = {
-  src: "",
+  src: "/img/works/nobleblocks/gallery6.webm",
   poster: "/img/works/nobleblocks/gallery6poster.jpg",
 };
 
 const galleryItems7 = [
-  { src: "/img/works/nobleblocks/gallery7-1.jpg", poster: null },
-  { src: "/img/works/nobleblocks/gallery7-2.jpg", poster: null },
-  { src: "", poster: "/img/works/nobleblocks/gallery7-3poster.jpg" },
+  { src: "/img/works/nobleblocks/gallery7-1.webp", poster: null },
+  { src: "/img/works/nobleblocks/gallery7-2.webp", poster: null },
+  { src: "/img/works/nobleblocks/gallery7-3.webm", poster: "/img/works/nobleblocks/gallery7-3poster.jpg" },
 ];
 
 const galleryItem8 = {
-  src: "/img/works/nobleblocks/gallery8.jpg",
+  src: "/img/works/nobleblocks/gallery8.webp",
   poster: null,
 };
 
 const galleryItems9 = [
-  { src: "", poster: "/img/works/nobleblocks/gallery9-1poster.jpg" },
+  { src: "/img/works/nobleblocks/gallery9-1.webm", poster: "/img/works/nobleblocks/gallery9-1poster.jpg" },
   { src: "/img/works/nobleblocks/gallery9-2.svg", poster: null },
-  { src: "", poster: "/img/works/nobleblocks/gallery9-3poster.jpg" },
+  { src: "/img/works/nobleblocks/gallery9-3.webm", poster: "/img/works/nobleblocks/gallery9-3poster.jpg" },
 ];
 
 const galleryItems10 = [
-  { src: "/img/works/nobleblocks/gallery10-1.jpg", poster: null },
-  { src: "", poster: "/img/works/nobleblocks/gallery10-2poster.jpg" },
-  { src: "", poster: "/img/works/nobleblocks/gallery10-3poster.jpg" },
+  { src: "/img/works/nobleblocks/gallery10-1.webp", poster: null },
+  { src: "/img/works/nobleblocks/gallery10-2.webm", poster: "/img/works/nobleblocks/gallery10-2poster.jpg" },
+  { src: "/img/works/nobleblocks/gallery10-3.webm", poster: "/img/works/nobleblocks/gallery10-3poster.jpg" },
 ];
 
 const galleryItem11 = {
-  src: "/img/works/nobleblocks/gallery11.jpg",
+  src: "/img/works/nobleblocks/gallery11.webp",
   poster: null,
 };
 
 const galleryItems12 = [
-  { src: "", poster: "/img/works/nobleblocks/gallery12-1poster.jpg" },
-  { src: "/img/works/nobleblocks/gallery12-2.svg", poster: null },
+  { src: "/img/works/nobleblocks/gallery12-1.webm", poster: "/img/works/nobleblocks/gallery12-1poster.jpg" },
+  { src: "/img/works/nobleblocks/gallery12-2.webm", poster: "/img/works/nobleblocks/gallery12-2.svg" },
   { src: "/img/works/nobleblocks/gallery12-3.svg", poster: null },
 ];
 
 const galleryItem13 = {
-  src: "",
+  src: "/img/works/nobleblocks/gallery13.webm",
   poster: "/img/works/nobleblocks/gallery13poster.jpg",
 };
 
 const galleryItem14 = {
-  src: "",
+  src: "/img/works/nobleblocks/gallery14.webm",
   poster: "/img/works/nobleblocks/gallery14poster.jpg",
 };
 
@@ -144,7 +144,7 @@ const page = () => {
           "Creating a more flexible digital platform for blockchain-based scientific research and publishing."
         }
         posterUrl={"/img/works/nobleblocks/hero-poster.jpg"}
-        videoUrl={null}
+        videoUrl={"/img/works/nobleblocks/hero-video.webm"}
       />
 
       <WorksContent>
