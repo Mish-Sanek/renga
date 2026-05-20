@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BorderedTitle from "../BorderedTitle/BorderedTitle";
+import Link from "next/link";
 
 const HomeWorks = () => {
   return (
@@ -48,9 +49,9 @@ const HomeWorks = () => {
           <p>Blockchain-based publishing platform.</p>
         </div>
       </div>
-      <a href="" className="works__more">
+      <Link href="/works" className="works__more">
         See more works
-      </a>
+      </Link>
     </section>
   );
 };

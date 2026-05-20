@@ -17,12 +17,12 @@ const PageFooterBig = () => {
           <li>
             Services
             <p>
-              <a href="">Brand Identity</a>
-              <a href="">Product Design</a>
-              <a href="">Web Design</a>
-              <a href="">Development</a>
-              <a href="">Motion</a>
-              <a href="">AI Design</a>
+              <Link href="">Brand Identity</Link>
+              <Link href="">Product Design</Link>
+              <Link href="">Web Design</Link>
+              <Link href="">Development</Link>
+              <Link href="">Motion</Link>
+              <Link href="">AI Design</Link>
             </p>
           </li>
 
@@ -33,8 +33,8 @@ const PageFooterBig = () => {
               <Link href="/services">Services</Link>
               <Link href="/clients">Clients</Link>
               <Link href="/about">About</Link>
-              <a href="">Blog</a>
-              <a href="">Privacy</a>
+              <Link href="">Blog</Link>
+              <Link href="">Privacy</Link>
             </p>
           </li>
 

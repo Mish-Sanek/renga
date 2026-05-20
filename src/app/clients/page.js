@@ -138,6 +138,10 @@ const heroPictures = [
   "/img/clients/1.webp",
   "/img/clients/2.webp",
   "/img/clients/3.webp",
+  "/img/clients/4.webp",
+  "/img/clients/5.webp",
+  "/img/clients/6.webp",
+  "/img/clients/7.webp",
 ];
 
 const page = () => {

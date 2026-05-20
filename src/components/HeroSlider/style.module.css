@@ -1,21 +1,45 @@
 .slider {
   display: flex;
   align-items: flex-start;
+  gap: 8px;
   margin-top: 96px;
+
+  /* Разрешаем горизонтальный скролл */
+  overflow-x: auto;
+  width: 100%;
+
+  /* Прячем дефолтный скроллбар во всех браузерах, чтобы было чисто */
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Прячем скроллбар для Chrome, Safari и Opera */
+.slider::-webkit-scrollbar {
+  display: none;
 }
 
 .slider img {
   flex-shrink: 0;
+  pointer-events: none;
+  height: auto;
+  /* Задаем дефолтную высоту/ширину для десктопа, если нужно */
+  width: 500px;
+}
 
+@media (max-width: 1023px) {
+  /* На планшетах и мобилках возвращаем нативный скролл пальцем с приятным скольжением */
+  .slider {
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 @media (max-width: 767px) {
-
   .slider {
     margin-top: 36px;
+    gap: 12px;
   }
 
   .slider img {
-    width: clamp(200px, 50vw, 400px);
+    width: clamp(200px, 60vw, 400px);
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import BorderedTitle from "../BorderedTitle/BorderedTitle";
+import Link from "next/link";
 
 const HomeAboutSecondary = () => {
   return (
@@ -19,9 +20,9 @@ const HomeAboutSecondary = () => {
           <p>Founded in</p>
         </li>
       </ul>
-      <a href="" className="about-secondary__more">
+      <Link href="/about" scroll={true} className="about-secondary__more">
         About Renua
-      </a>
+      </Link>
     </section>
   );
 };
