@@ -95,6 +95,11 @@
   display: block;
   margin-top: 32px;
   font-weight: 500;
+  transition: color 0.5s ease;
+}
+
+.works-list__item:hover b {
+  color: #7a7777;
 }
 
 .works-list__item ul {

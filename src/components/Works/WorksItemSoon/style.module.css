@@ -23,8 +23,7 @@
   padding: 12px 32px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   transform: translateY(20px);
   transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -33,19 +32,6 @@
   opacity: 1;
 }
 
-
 :global(.works-list__item):hover .soon span {
   transform: translateY(0);
-}
-
-:global(.works-list__item):hover .works-list__img-handler video,
-:global(.works-list__item):hover .works-list__img-handler img {
-  filter: blur(12px) brightness(0.7);
-  transition: filter 0.4s ease;
-}
-
-:global(.works-list__img-handler) video,
-:global(.works-list__img-handler) img {
-  transition: filter 0.4s ease;
-  will-change: filter, transform;
 }
