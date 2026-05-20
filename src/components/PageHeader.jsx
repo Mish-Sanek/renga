@@ -47,6 +47,7 @@ const PageHeader = () => {
             key={link.url}
             onClick={closeMenu}
             scroll={true}
+            prefetch={true}
           >
             {link.name}
           </Link>

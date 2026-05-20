@@ -5,7 +5,7 @@ import styles from "./style.module.css";
 const HeroSlider = ({ items }) => {
   const sliderRef = useRef(null);
 
-  // Дублируем массив картинок, чтобы создать иллюзию бесконечной ленты
+
   const quadrupleItems = [...items, ...items, ...items, ...items];
 
   const speedData = useRef({
@@ -25,7 +25,7 @@ const HeroSlider = ({ items }) => {
 
       const data = speedData.current;
 
-      // Рассчитываем плавную скорость
+
       data.currentSpeed += (data.targetSpeed - data.currentSpeed) * data.lerpFactor;
 
       if (Math.abs(data.currentSpeed) < 0.01) {
@@ -36,16 +36,14 @@ const HeroSlider = ({ items }) => {
         slider.scrollLeft += data.currentSpeed;
       }
 
-      // --- БЕСШОВНАЯ КРУТИЛКА ---
-      // Вычисляем ширину оригинального набора картинок (ровно половина скролла)
       const halfWidth = slider.scrollWidth / 2;
 
-      // Если прокрутили вправо дальше, чем длина первой копии — незаметно прыгаем назад
+
       if (slider.scrollLeft >= halfWidth) {
         slider.scrollLeft -= halfWidth;
       }
 
-      // If скроллим влево и ушли за пределы нуля — прыгаем вперед на вторую копию
+
       if (slider.scrollLeft <= 0 && data.currentSpeed < 0) {
         slider.scrollLeft += halfWidth;
       }
@@ -97,17 +95,3 @@ const HeroSlider = ({ items }) => {
 };
 
 export default HeroSlider;
-
-// import styles from './style.module.css'
-
-// const HeroSlider = ({items}) => {
-//   return (
-//     <div className={styles.slider}>
-//       {
-//         items.map((item, index) => <img src={item} key={index} alt='' />)
-//       }
-//     </div>
-//   )
-// }
-
-// export default HeroSlider
