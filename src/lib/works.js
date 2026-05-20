@@ -10,7 +10,7 @@ export const allWorks = [
   },
   {
     id: 1,
-    picture: '/img/works/vodafone.webp',
+    picture: '/img/works/Vodafone.webp',
     slug: 'vodafone',
     name: 'Vodafone',
     tags: ['Campaign Design', 'Motion'],
@@ -18,7 +18,7 @@ export const allWorks = [
   },
   {
     id: 2,
-    picture: '/img/works/cruz.webp',
+    picture: '/img/works/Cruz.webp',
     video: '/img/home/works/Cruz.webm',
     slug: 'cruz',
     name: 'Cruz',
@@ -35,7 +35,7 @@ export const allWorks = [
   },
   {
     id: 4,
-    picture: '/img/works/nvo.webp',
+    picture: '/img/works/NVO.webp',
     slug: 'nvo',
     name: 'NVO',
     tags: ['Brand Identity', 'Web Design'],
@@ -133,7 +133,7 @@ export const allWorks = [
   },
   {
     id: 16,
-    picture: '/img/works/boba.webp',
+    picture: '/img/works/Boba.webp',
     slug: 'bobaswap',
     name: 'Bobaswap',
     tags: ['Illustration', 'Branding', 'Motion'],
