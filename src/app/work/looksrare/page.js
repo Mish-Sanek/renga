@@ -60,54 +60,54 @@ const descriptionData = {
 };
 
 const galleryItems1 = [
-  { src: "", poster: "/img/works/looksrare/gallery1-1poster.jpg" },
-  { src: "/img/works/looksrare/gallery1-2.jpg", poster: null },
-  { src: "/img/works/looksrare/gallery1-3.jpg", poster: null },
+  { src: "/img/works/looksrare/gallery1-1.webm", poster: "/img/works/looksrare/gallery1-1poster.jpg" },
+  { src: "/img/works/looksrare/gallery1-2.webp", poster: null },
+  { src: "/img/works/looksrare/gallery1-3.webp", poster: null },
 ];
 
-const galleryItem2 = { src: "", poster: "/img/works/looksrare/gallery2poster.jpg" };
+const galleryItem2 = { src: "/img/works/looksrare/gallery2.webm", poster: "/img/works/looksrare/gallery2poster.jpg" };
 
 const galleryItem3 = { src: "/img/works/looksrare/gallery3.svg", poster: null };
 
-const galleryItem4 = { src: "", poster: "/img/works/looksrare/gallery4poster.jpg" };
+const galleryItem4 = { src: "/img/works/looksrare/gallery4.webm", poster: "/img/works/looksrare/gallery4poster.jpg" };
 
 const galleryItems5 = [
-  { src: "/img/works/looksrare/gallery5-1.jpg", poster: null },
-  { src: "/img/works/looksrare/gallery5-2.jpg", poster: null },
-  { src: "/img/works/looksrare/gallery5-3.jpg", poster: null },
+  { src: "/img/works/looksrare/gallery5-1.webp", poster: null },
+  { src: "/img/works/looksrare/gallery5-2.webp", poster: null },
+  { src: "/img/works/looksrare/gallery5-3.webp", poster: null },
 ]
 
 const galleryItem6 = { src: "/img/works/looksrare/gallery6.svg", poster: null };
 
-const galleryItem7 = { src: "", poster: "/img/works/looksrare/gallery7poster.jpg" };
+const galleryItem7 = { src: "/img/works/looksrare/gallery7.webm", poster: "/img/works/looksrare/gallery7poster.jpg" };
 
 const galleryItems8 = [
   { src: "/img/works/looksrare/gallery8-1.svg", poster: null },
   { src: "/img/works/looksrare/gallery8-2.svg", poster: null },
-  { src: "", poster: "/img/works/looksrare/gallery8-3poster.jpg" },
+  { src: "/img/works/looksrare/gallery8-3.webm", poster: "/img/works/looksrare/gallery8-3poster.jpg" },
 ]
 
-const galleryItem9 = { src: "", poster: "/img/works/looksrare/gallery9poster.jpg" };
+const galleryItem9 = { src: "/img/works/looksrare/gallery9.webm", poster: "/img/works/looksrare/gallery9poster.jpg" };
 
 const galleryItems10 = [
-  { src: "/img/works/looksrare/gallery10-1.jpg", poster: null },
-  { src: "/img/works/looksrare/gallery10-2.jpg", poster: null },
-  { src: "/img/works/looksrare/gallery10-3.jpg", poster: null },
+  { src: "/img/works/looksrare/gallery10-1.webp", poster: null },
+  { src: "/img/works/looksrare/gallery10-2.webp", poster: null },
+  { src: "/img/works/looksrare/gallery10-3.webp", poster: null },
 ]
 
-const galleryItem11 = { src: "/img/works/looksrare/gallery11.jpg", poster: null };
+const galleryItem11 = { src: "/img/works/looksrare/gallery11.webm", poster: "/img/works/looksrare/gallery11.jpg" };
 
-const galleryItem12 = { src: "", poster: "/img/works/looksrare/gallery12poster.jpg" };
+const galleryItem12 = { src: "/img/works/looksrare/gallery12.webm", poster: "/img/works/looksrare/gallery12poster.jpg" };
 
-const galleryItem13 = { src: "", poster: "/img/works/looksrare/gallery13poster.jpg" };
+const galleryItem13 = { src: "/img/works/looksrare/gallery13.webm", poster: "/img/works/looksrare/gallery13poster.jpg" };
 
 const galleryItems14 = [
-  { src: "", poster: "/img/works/looksrare/gallery14-1poster.jpg" },
-  { src: "/img/works/looksrare/gallery14-2.jpg", poster: null },
-  { src: "", poster: "/img/works/looksrare/gallery14-3poster.jpg" },
+  { src: "/img/works/looksrare/gallery14-1.webm", poster: "/img/works/looksrare/gallery14-1poster.jpg" },
+  { src: "/img/works/looksrare/gallery14-2.webp", poster: null },
+  { src: "/img/works/looksrare/gallery14-3.webm", poster: "/img/works/looksrare/gallery14-3poster.jpg" },
 ]
 
-const galleryItem16 = { src: "", poster: "/img/works/looksrare/gallery16poster.jpg" };
+const galleryItem15 = { src: "/img/works/looksrare/gallery15.webm", poster: "/img/works/looksrare/gallery15poster.jpg" };
 
 const page = () => {
   return (
@@ -118,7 +118,7 @@ const page = () => {
           "Designing a more expressive marketplace experience for a new era of digital assets and communities."
         }
         posterUrl={"/img/works/looksrare/hero-poster.jpg"}
-        videoUrl={null}
+        videoUrl={"/img/works/looksrare/hero-video.webm"}
       />
 
       <WorksContent>
@@ -155,7 +155,7 @@ const page = () => {
           title={"A more expressive digital marketplace."}
           descr={`The final system combined branding, motion and product design into a unified experience built for modern digital communities.`}
         />
-        <WorkSingleMedia item={galleryItem16} />
+        <WorkSingleMedia item={galleryItem15} />
         <LastProjects smallItemTitle="Freedom Finance - Cards Series" bigItemTitle="Vodafone" />
       </WorksContent>
     </main>
