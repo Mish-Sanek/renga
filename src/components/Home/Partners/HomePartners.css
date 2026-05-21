@@ -49,32 +49,26 @@
   transition: opacity 0.3s ease;
 }
 
-/* --- МАГИЯ БЕСШОВНОГО СКРОЛЛА --- */
 @keyframes scrollMarquee {
   0% {
     transform: translateX(0);
   }
   100% {
-    /* Поскольку массив сдублирован ровно 1 раз, -50% — это конец первой копии.
-       В этой точке скролл прыгает в 0 абсолютно незаметно для глаза. */
     transform: translateX(-50%);
   }
 }
 
-/* --- АДАПТИВ ДЛЯ МОБИЛОК --- */
 @media (max-width: 767px) {
   .partners-marquee {
     padding: 24px 0;
   }
 
-  /* На мобилке можно ускорить анимацию, так как расстояние уменьшилось */
   .marquee-track {
     gap: 30px;
   }
 
   .marquee-item {width: 130px;}
 
-  /* Если у тебя сайт на темной теме — поменяй градиент в масках на черный */
   .partners-marquee::before,
   .partners-marquee::after {
     width: 40px;
