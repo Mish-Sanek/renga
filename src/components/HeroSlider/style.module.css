@@ -3,17 +3,12 @@
   align-items: flex-start;
   gap: 8px;
   margin-top: 96px;
-
-  /* Разрешаем горизонтальный скролл */
   overflow-x: auto;
   width: 100%;
-
-  /* Прячем дефолтный скроллбар во всех браузерах, чтобы было чисто */
-  -ms-overflow-style: none;  /* IE и Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* Прячем скроллбар для Chrome, Safari и Opera */
 .slider::-webkit-scrollbar {
   display: none;
 }
@@ -22,12 +17,13 @@
   flex-shrink: 0;
   pointer-events: none;
   height: auto;
-  /* Задаем дефолтную высоту/ширину для десктопа, если нужно */
   width: 500px;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 @media (max-width: 1023px) {
-  /* На планшетах и мобилках возвращаем нативный скролл пальцем с приятным скольжением */
   .slider {
     -webkit-overflow-scrolling: touch;
   }

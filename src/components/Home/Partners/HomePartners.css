@@ -39,8 +39,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px; /* Ширина шага для десктопа */
-  padding: 0 30px; /* Отступы между логотипами внутри трека */
   flex-shrink: 0;
 }
 
