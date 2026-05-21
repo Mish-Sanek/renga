@@ -24,7 +24,7 @@ const HomeWorks = () => {
           <p>Creative campaign and digital experience.</p>
         </div>
         <div className="works__list-item works__list-item--60">
-          <video src="/img/home/works/cruz.webm" poster="/img/home/works/cruz.jpg" autoPlay loop muted playsInline />
+          <video src="/img/home/works/Cruz.webm" poster="/img/home/works/cruz.jpg" autoPlay loop muted playsInline />
           <b>Cruz</b>
           <p>Reimagining digital banking.</p>
         </div>
