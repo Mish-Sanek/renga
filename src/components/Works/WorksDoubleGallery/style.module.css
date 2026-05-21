@@ -16,3 +16,10 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 767px) {
+  .gallery {
+    margin: 4px 0;
+    gap: 4px;
+  }
+}

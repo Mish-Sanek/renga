@@ -7,25 +7,24 @@ const partners = [
 ];
 
 const HomePartners = () => {
+  const duplicatedPartners = [...partners, ...partners];
+
   return (
-    <div className="partners marquee-container">
-      <div className="marquee marquee-grid">
-        {partners.map((src, idx) => (
-          <Image src={`/img/home/partners/${src}.svg`} key={idx} width={100} height={100} alt="" className="marquee__item" />
+    <div className="partners-marquee">
+      <div className="marquee-track">
+        {duplicatedPartners.map((src, idx) => (
+          <div className="marquee-item" key={idx}>
+            <Image
+              src={`/img/home/partners/${src}.svg`}
+              width={140}
+              height={60}
+              alt=""
+              priority={idx < 5}
+            />
+          </div>
         ))}
       </div>
-
-      <div className="marquee-slider-wrapper">
-        <div className="marquee-slider">
-          <div className="marquee-slider-track">
-            {partners.map((src, idx) => (
-              <Image src={`/img/home/partners/${src}.svg`} width={100} height={100} key={idx} className="marquee-slider__item" alt="" />
-            ))}
-          </div>
-        </div>
-      </div>
     </div>
-
   );
 };
 

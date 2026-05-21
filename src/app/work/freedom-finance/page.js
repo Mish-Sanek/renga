@@ -76,7 +76,7 @@ const galleryItems2 = [
 const galleryItems3 = [
   { src: "/img/works/freedom-finance/gallery3-1.webp", poster: null },
   { src: "/img/works/freedom-finance/gallery3-2.webp", poster: null },
-  { src: "gallery3-3.webm", poster: "/img/works/freedom-finance/gallery3-3poster.jpg" },
+  { src: "/img/works/freedom-finance/gallery3-3.webm", poster: "/img/works/freedom-finance/gallery3-3poster.jpg" },
 ];
 
 const galleryItem4 = {src: "/img/works/freedom-finance/gallery4.webp", poster: null}
@@ -118,7 +118,7 @@ const page = () => {
   return (
     <main>
       <CommonHero
-        title={"FreedomFinance"}
+        title={"Freedom Finance Bank"}
         descr={
           "Designing a modern financial experience for a new generation of investors."
         }

@@ -1,25 +1,24 @@
-import React from "react";
-import BorderedTitle from "../BorderedTitle/BorderedTitle";
 import Link from "next/link";
 
 const HomeAboutSecondary = () => {
   return (
     <section className="about-secondary">
-      <BorderedTitle>Who we are</BorderedTitle>
-      <h3 className="about-secondary__text">
+      <h3 className="visually-hidden">
         Renua is a digital design studio helping ambitious companies create
         brands, products and digital experiences that stand out and scale.
       </h3>
       <ul>
-        <li>
-          <b>40+</b>
-          <p>Projects delivered</p>
-        </li>
-        <li>
-          <b>2016</b>
-          <p>Founded in</p>
-        </li>
+        <li>AI Products</li>
+        <li>Fintech</li>
+        <li>Digital Platforms</li>
+        <li>Brand Systems</li>
+        <li>Motion & 3D</li>
+        <li>Web Experiences</li>
       </ul>
+      <p>
+        We design scalable digital products, visual systems and immersive brand
+        experiences for modern technology companies.
+      </p>
       <Link href="/about" scroll={true} className="about-secondary__more">
         About Renua
       </Link>

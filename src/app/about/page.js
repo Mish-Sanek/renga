@@ -1,13 +1,13 @@
 import Image from "next/image";
 import "./about.css";
 
-import Link from "next/link";
 import TestimonialsSlider from "@/components/Sliders/TestimonialsSlider";
 import LetsBuild from "@/components/LetsBuild/LetsBuild";
 import BorderedTitle from "@/components/BorderedTitle/BorderedTitle";
 
 import { testimonialsList } from "@/lib/reviews";
 import LastProjects from "@/components/LastProjects";
+import HomePartners from "@/components/Home/Partners/HomePartners";
 
 export const metadata = {
   title: "Clients — AI, Fintech & Technology Companies | Renua",
@@ -106,22 +106,7 @@ const page = () => {
         </ul>
       </section>
 
-      <ul className="about-partners">
-        {partners.map((src, idx) => (
-          <li key={idx}>
-            <Image
-              src={`/img/home/partners/${src}.svg`}
-              width={100}
-              height={100}
-              alt=""
-              className="marquee__item"
-            />
-          </li>
-        ))}
-        <li>
-          <Link href="clients">Full list</Link>
-        </li>
-      </ul>
+      <HomePartners />
 
       <section className="about-team">
         <BorderedTitle>Team</BorderedTitle>

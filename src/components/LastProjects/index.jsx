@@ -8,7 +8,7 @@ const variants = [
     descr:
       "Bank card design exploring modern fintech identity and digital aesthetics.",
     bgColor: "#8CE85F",
-    textColor: "#ffffff",
+    textColor: "#0D0D0D",
     posterUrl: "/img/last-projects/freedom-finance-poster.jpg",
     videoUrl: "",
     link: '/work/freedom-finance',
@@ -58,7 +58,7 @@ const variants = [
     descr:
       "Web3 marketplace product blending motion, identity and community-driven design.",
     bgColor: "#97F574",
-    textColor: "#ffffff",
+    textColor: "#0D0D0D",
     posterUrl: "/img/last-projects/looksrare-poster.jpg",
     videoUrl: "/img/last-projects/",
     link: '/work/looksrare',
@@ -68,7 +68,7 @@ const variants = [
     descr:
       "A Web3 publishing ecosystem designed for modern scientific collaboration.",
     bgColor: "#BB87E0",
-    textColor: "#ffffff",
+    textColor: "#0D0D0D",
     posterUrl: "/img/last-projects/nobleblocks-poster.jpg",
     videoUrl: "",
     link: '/work/nobleblocks',
