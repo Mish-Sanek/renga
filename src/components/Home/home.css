@@ -161,6 +161,10 @@
   color: #0D0D0D;
 }
 
+.works__more:hover {
+  filter: contrast(0.1);
+}
+
 .works__more::after {
   width: 24px;
   height: 24px;
@@ -236,6 +240,10 @@
   margin-top: 72px;
   font-weight: 600;
   color: #0D0D0D;
+}
+
+.about-secondary__more:hover {
+  filter: contrast(0.1);
 }
 
 .about-secondary__more::after {

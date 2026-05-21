@@ -28,7 +28,7 @@
 }
 
 .lastProjects__item--big {
-  width: 62.6%;
+  width: 62.4%;
   aspect-ratio: 954/658;
 }
 
@@ -89,6 +89,11 @@
   gap: 10px;
   margin-top: 36px;
   font-weight: 600;
+}
+
+
+.lastProjects__more:hover {
+  filter: contrast(0.1);
 }
 
 .lastProjects__more::after {

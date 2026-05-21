@@ -1,9 +1,8 @@
 "use client"
 import React, { useRef } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { useLenis } from "lenis/react";
-import WorksItemSoon from "./WorksItemSoon";
+import FollowCursor from "../FollowCursor";
 
 const WorksItem = ({ item }) => {
 
@@ -31,7 +30,6 @@ const WorksItem = ({ item }) => {
         <div ref={imgRef} className="works-list__img-handler">
           <video src={item.video} poster={item.picture} autoPlay muted loop playsInline />
         </div>
-        {!item.isReady && <WorksItemSoon />}
       </div>
 
       <b>{item.name}</b>
@@ -40,6 +38,7 @@ const WorksItem = ({ item }) => {
           <li key={tag}>{tag}</li>
         ))}
       </ul>
+      {!item.isReady && <FollowCursor>Soon</FollowCursor>}
     </Link>
   );
 };

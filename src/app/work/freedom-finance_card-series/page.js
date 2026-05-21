@@ -78,7 +78,7 @@ const galleryItems4 = [
 
 const galleryItems5 = [
   { src: "/img/works/freedom-finance-cards/gallery5-1.webp", poster: null },
-  { src: "/img/works/freedom-finance-cards/gallery5-2.webm", poster: "/img/works/freedom-finance-cards/gallery5-2.webp" },
+  { src: "/img/works/freedom-finance-cards/gallery5-2.webp", poster: "" },
   { src: "/img/works/freedom-finance-cards/gallery5-3.webm", poster: "/img/works/freedom-finance-cards/gallery5-3poster.jpg" },
 ];
 

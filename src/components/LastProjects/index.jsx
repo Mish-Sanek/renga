@@ -1,6 +1,8 @@
+"use client"
 import styles from "./style.module.css";
 import Link from "next/link";
 import BorderedTitle from "../BorderedTitle/BorderedTitle";
+import FollowCursor from "../FollowCursor";
 
 const variants = [
   {
@@ -81,7 +83,7 @@ const variants = [
     textColor: "#ffffff",
     posterUrl: "/img/last-projects/ApeAi-poster.jpg",
     videoUrl: "",
-    link: '#',
+    link: '',
   },
 ];
 
@@ -107,12 +109,13 @@ const LastProjects = ({
       <BorderedTitle>Last Project</BorderedTitle>
       <nav className={navClassName}>
         <Link
-          href={smallData.link}
+          href={smallData.link !== '' ? smallData.link : '#'}
           className={
             styles.lastProjects__item +
             " " +
             styles["lastProjects__item--small"]
           }
+          onClick={(e) => smallData.link === '' && e.preventDefault()}
         >
           <div
             className={styles.lastProjects__itemInfo}
@@ -129,12 +132,16 @@ const LastProjects = ({
             muted
             loop
           />
+          {
+            smallData.link === '' && <FollowCursor>Soon</FollowCursor>
+          }
         </Link>
         <Link
-          href={bigData.link}
+          href={bigData.link !== '' ? bigData.link : '#'}
           className={
             styles.lastProjects__item + " " + styles["lastProjects__item--big"]
           }
+          onClick={(e) => bigData.link === '' && e.preventDefault()}
         >
           <div
             className={styles.lastProjects__itemInfo}
@@ -151,6 +158,9 @@ const LastProjects = ({
             muted
             loop
           />
+          {
+            bigData.link === '' && <FollowCursor>Soon</FollowCursor>
+          }
         </Link>
       </nav>
       <Link href="/work" className={styles.lastProjects__more}>

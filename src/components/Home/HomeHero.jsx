@@ -1,3 +1,5 @@
+import FollowCursor from "../FollowCursor";
+
 const HomeHero = () => {
   return (
     <section className="hero">
@@ -5,7 +7,8 @@ const HomeHero = () => {
         We design brands, products and digital <br/>
         experiences for ambitious companies.
       </h1>
-      <video
+      <div>
+        <video
         src="/img/home/Tama.webm"
         className="hero__video"
         poster="/img/home/hero-poster.jpg"
@@ -14,6 +17,8 @@ const HomeHero = () => {
         loop
         playsInline
       />
+      <FollowCursor>Soon</FollowCursor>
+      </div>
     </section>
   );
 };
