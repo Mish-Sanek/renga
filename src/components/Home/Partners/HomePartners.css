@@ -64,10 +64,10 @@
   }
 
   .marquee-track {
-    gap: 30px;
+    gap: 80px;
   }
 
-  .marquee-item {width: 130px;}
+  .marquee-item {width: 100px;}
 
   .partners-marquee::before,
   .partners-marquee::after {
