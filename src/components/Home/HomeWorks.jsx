@@ -19,7 +19,7 @@ const HomeWorks = () => {
         <HomeWorksItem
           href='freedom-finance'
           src='/img/home/works/Freedomfinance.webm'
-          poster='/img/home/works/Freedomfinance-poster.webp'
+          poster='/img/home/works/Freedomfinance-poster.jpg'
           name='Freedom Finance'
           descr='A visually compelling card identity and ecosystem.'
         />

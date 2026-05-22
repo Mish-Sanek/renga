@@ -78,8 +78,10 @@
 
 @media (max-width: 1200px) {
   .about__info {
-    gap: 40px;
+    gap: 54px;
   }
+
+  .about__info p {max-width: 466px;}
 
   .about__info p br {
     display: none;
@@ -88,6 +90,7 @@
   .about__info ul {
     width: auto;
     flex-shrink: 0;
+    font-size: 28px;
   }
 }
 
@@ -262,7 +265,7 @@
 
 @media (max-width: 1200px) {
   .about-secondary ul {
-    font-size: 160px;
+    font-size: 48px;
   }
 }
 
