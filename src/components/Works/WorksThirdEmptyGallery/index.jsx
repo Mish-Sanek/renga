@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./style.module.css";
+import LazyVideo from "@/components/LazyVideo";
 
 const WorksThirdEmptyGallery = ({item, isReversed = false }) => {
   return (
@@ -7,15 +8,7 @@ const WorksThirdEmptyGallery = ({item, isReversed = false }) => {
       className={`${styles.gallery} ${isReversed ? styles["gallery--reversed"] : ""}`}
     >
       {item.poster !== null ? (
-        <video
-          src={item.src !== "" ? item.src : null}
-          poster={item.poster}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className={styles.media}
-        />
+        <LazyVideo src={item.src !== null ? item.src : null} poster={item.poster} className={styles.media} />
       ) : (
         <Image src={item.src} className={styles.media} width={758} height={800} alt="" />
       )}

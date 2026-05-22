@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import React, { useRef } from "react";
 import Link from "next/link";
 import { useLenis } from "lenis/react";
 import FollowCursor from "../FollowCursor";
+import LazyVideo from "../LazyVideo";
 
 const WorksItem = ({ item }) => {
-
   const imgRef = useRef();
 
   useLenis(() => {
@@ -21,14 +21,14 @@ const WorksItem = ({ item }) => {
 
   return (
     <Link
-      href={item.isReady ? `/work/${item.slug}` : '#'}
+      href={item.isReady ? `/work/${item.slug}` : "#"}
       scroll={true}
-      className={`works-list__item ${!item.isReady ? 'works-list__item--disabled' : ''}`}
+      className={`works-list__item ${!item.isReady ? "works-list__item--disabled" : ""}`}
       onClick={(e) => !item.isReady && e.preventDefault()}
     >
       <div className="works-list__parallax-wrapper">
         <div ref={imgRef} className="works-list__img-handler">
-          <video src={item.video} poster={item.picture} autoPlay muted loop playsInline />
+          <LazyVideo src={item.video} poster={item.picture} />
         </div>
       </div>
 

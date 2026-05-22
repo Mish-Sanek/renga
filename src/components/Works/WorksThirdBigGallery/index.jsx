@@ -1,3 +1,4 @@
+import LazyVideo from '@/components/LazyVideo'
 import styles from './style.module.css'
 import Image from 'next/image'
 
@@ -9,14 +10,7 @@ const WorksThirdSmallGallery = ({items, isReversed = false}) => {
       {items.map((item, index) => (
         <div key={index} className={styles.mediaWrapper}>
           {item.poster !== null ? (
-            <video
-              src={item.src !== "" ? item.src : null}
-              poster={item.poster}
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
+            <LazyVideo src={item.src !== null ? item.src : null} poster={item.poster} />
           ) : (
             <Image src={item.src} width={988} height={754} alt="" />
           )}

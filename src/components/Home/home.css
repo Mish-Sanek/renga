@@ -114,6 +114,7 @@
 
 .works__list {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 120px 24px;
   margin-top: 36px;

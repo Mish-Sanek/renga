@@ -1,3 +1,4 @@
+import LazyVideo from '@/components/LazyVideo';
 import styles from './style.module.css'
 import Image from 'next/image';
 
@@ -8,14 +9,7 @@ const WorksDualDifferentHeightGallery = ({items}) => {
       {items.map((item) => (
         <div key={item.src} className={styles.mediaWrapper}>
           {item.poster ? (
-            <video
-              src={item.src !== "" ? item.src : null}
-              poster={item.poster}
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
+            <LazyVideo src={item.src !== null ? item.src : null} poster={item.poster} />
           ) : (
             <Image
               src={item.src}

@@ -1,3 +1,4 @@
+import LazyVideo from '@/components/LazyVideo';
 import styles from './style.module.css'
 import Image from "next/image";
 
@@ -6,14 +7,7 @@ const WorksHalfGallery = ({ item , isReversed = false}) => {
     <div className={`${styles.gallery} ${isReversed ? styles["gallery--reversed"]: ''}`}>
       <span></span>
       {item.poster !== null ? (
-        <video
-          src={item.src !== "" ? item.src : null}
-          poster={item.poster}
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
+        <LazyVideo src={item.src !== null ? item.src : null} poster={item.poster} />
       ) : (
         <Image src={item.src} width={758} height={800} alt="" />
       )}

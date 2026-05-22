@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./style.module.css";
+import LazyVideo from "@/components/LazyVideo";
 
 const WorksDoubleDynamicGallery = ({ items }) => {
 
@@ -8,15 +9,7 @@ const WorksDoubleDynamicGallery = ({ items }) => {
       {items.map((item, index) => (
         <div key={index} className={styles.mediaWrapper}>
           {item.poster ? (
-            <video
-              src={item.src}
-              poster={item.poster}
-              autoPlay
-              muted
-              loop
-              playsInline
-              className={styles.media}
-            />
+            <LazyVideo src={item.src !== null ? item.src : null} poster={item.poster} className={styles.media} />
           ) : (
             <Image
               src={item.src}

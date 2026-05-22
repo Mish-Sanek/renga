@@ -1,6 +1,7 @@
 import "./services.css";
 
 import BorderedTitle from "@/components/BorderedTitle/BorderedTitle";
+import LazyVideo from "@/components/LazyVideo";
 import LetsBuild from "@/components/LetsBuild/LetsBuild";
 
 const page = () => {
@@ -12,7 +13,7 @@ const page = () => {
           We design brands, products and digital experiences — from early
           concepts to production-ready systems.
         </p>
-        <video className="services-content__top-video" src={'/img/services/hero-video.webm'} poster={"/img/services/hero-poster.jpg"} autoPlay muted loop playsInline />
+        <LazyVideo src={'/img/services/hero-video.webm'} poster={'/img/services/hero-poster.jpg'} className="services-content__top-video" />
       </section>
 
       <section className="services-features">

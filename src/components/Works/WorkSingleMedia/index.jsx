@@ -1,3 +1,4 @@
+import LazyVideo from '@/components/LazyVideo';
 import styles from './style.module.css'
 import Image from "next/image";
 
@@ -5,15 +6,7 @@ const WorkSingleMedia = ({ item }) => {
   return (
     <>
       {item.poster !== null ? (
-        <video
-        className={styles.singleMedia}
-          src={item.src !== "" ? item.src : null}
-          poster={item.poster}
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
+        <LazyVideo src={item.src !== null ? item.src : null} poster={item.poster} className={styles.singleMedia} />
       ) : (
         <Image
           className={styles.singleMedia}
