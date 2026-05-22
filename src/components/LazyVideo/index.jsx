@@ -1,58 +1,69 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 
-const LazyVideo = ({ src, poster, threshold = 0.1, ...props }) => {
-  const [isVisible, setIsVisible] = useState(false);
+const LazyVideo = ({ src, poster, threshold = 0.05, aspectRatio = "16/9", ...props }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
   const videoRef = useRef(null);
-  const observerRef = useRef(null);
 
   useEffect(() => {
-    if (!videoRef.current) return;
+    const video = videoRef.current;
+    if (!video) return;
 
-    observerRef.current = new IntersectionObserver(
+
+    const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible(true);
+
+            setIsLoaded(true);
+
+
+            video.play().catch((e) => console.log('Autoplay blocked:', e));
           } else {
-            setIsVisible(false);
+
+            if (isLoaded) {
+              video.pause();
+            }
           }
         });
       },
-      { threshold }
+      { threshold, rootMargin: '200px' }
     );
 
-    observerRef.current.observe(videoRef.current);
+    observer.observe(video);
 
     return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
+      observer.disconnect();
     };
-  }, [threshold]);
-
-  useEffect(() => {
-    if (!videoRef.current) return;
-
-    if (isVisible) {
-      videoRef.current.play().catch((e) => {
-        console.log('Video autoplay failed:', e);
-      });
-    } else {
-      videoRef.current.pause();
-    }
-  }, [isVisible]);
+  }, [threshold, isLoaded]);
 
   return (
-    <video
-      ref={videoRef}
-      src={src}
-      poster={poster}
-      muted
-      loop
-      playsInline
-      {...props}
-    />
+    <div
+      style={{
+        position: 'relative',
+        width: '100%',
+        aspectRatio: aspectRatio,
+        backgroundColor: '#f0f0f0',
+        overflow: 'hidden'
+      }}
+    >
+      <video
+        ref={videoRef}
+
+        src={isLoaded ? src : undefined}
+        poster={poster}
+        muted
+        loop
+        playsInline
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          display: 'block'
+        }}
+        {...props}
+      />
+    </div>
   );
 };
 
