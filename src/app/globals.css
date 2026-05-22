@@ -69,6 +69,7 @@ html.lenis, html.lenis body {
 
 video:not(.controllable) {
   pointer-events: none;
+  object-fit: cover;
 }
 
 video:not(.controllable)::-webkit-media-controls {

@@ -3,7 +3,6 @@ import { ReactLenis, useLenis } from "lenis/react";
 import { useEffect, useState, useRef } from "react";
 import { usePathname } from "next/navigation";
 
-
 const ScrollReset = () => {
   const pathname = usePathname();
   const lenis = useLenis();
@@ -26,17 +25,23 @@ const ScrollReset = () => {
 };
 
 const ScrollContainer = ({ children }) => {
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [shouldSmoothScroll, setShouldSmoothScroll] = useState(false);
 
   useEffect(() => {
-    const checkScreen = () => {
-      setIsDesktop(window.innerWidth >= 1280);
+    const checkDevice = () => {
+      const isDesktopWidth = window.innerWidth >= 1280;
+
+      const hasFinePointer = window.matchMedia('(pointer: fine)').matches;
+
+      const shouldEnable = isDesktopWidth && hasFinePointer;
+
+      setShouldSmoothScroll(shouldEnable);
     };
 
-    checkScreen();
-    window.addEventListener("resize", checkScreen);
+    checkDevice();
+    window.addEventListener("resize", checkDevice);
 
-    return () => window.removeEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkDevice);
   }, []);
 
   const scrollOptions = {
@@ -49,7 +54,7 @@ const ScrollContainer = ({ children }) => {
     syncTouch: true,
   };
 
-  if (!isDesktop) {
+  if (!shouldSmoothScroll) {
     return <>{children}</>;
   }
 
