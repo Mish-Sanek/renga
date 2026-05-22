@@ -55,12 +55,6 @@ const LazyVideo = ({ src, poster, threshold = 0.05, aspectRatio = "16/9", ...pro
         muted
         loop
         playsInline
-        style={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          display: 'block'
-        }}
         {...props}
       />
     </div>
