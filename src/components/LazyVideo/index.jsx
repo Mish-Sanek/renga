@@ -41,10 +41,6 @@ const LazyVideo = ({ src, poster, threshold = 0.05, aspectRatio = "16/9", ...pro
     <div
       style={{
         position: 'relative',
-        width: '100%',
-        aspectRatio: aspectRatio,
-        backgroundColor: '#f0f0f0',
-        overflow: 'hidden'
       }}
     >
       <video
