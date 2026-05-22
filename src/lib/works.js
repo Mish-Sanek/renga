@@ -10,7 +10,8 @@ export const allWorks = [
   },
   {
     id: 1,
-    picture: '/img/works/Vodafone.webp',
+    picture: '/img/works/vodafone/gallery1-3poster.jpg',
+    video: '/img/works/vodafone/gallery1-3.webm',
     slug: 'vodafone',
     name: 'Vodafone',
     tags: ['Campaign Design', 'Motion'],
@@ -62,6 +63,7 @@ export const allWorks = [
   {
     id: 7,
     picture: '/img/works/ApeAi.webp',
+    video: '/img/home/works/ApeAi.webm',
     slug: 'ape-ai',
     name: 'Ape AI',
     tags: ['Product Design', 'Branding'],
@@ -70,6 +72,7 @@ export const allWorks = [
   {
     id: 8,
     picture: '/img/works/Pancakeswap.webp',
+    video: '/img/works/Pancakeswap.webm',
     slug: 'pancakeswap',
     name: 'Pancakeswap',
     tags: ['Product Design', 'Branding', 'Motion'],
@@ -84,19 +87,20 @@ export const allWorks = [
     isReady: false,
   },
   {
-    id: 10,
-    picture: '/img/works/Pancake.webp',
-    slug: 'pancake',
-    name: 'Pancake',
-    tags: ['3D Motion', 'Illustration'],
-    isReady: false,
-  },
-  {
     id: 11,
     picture: '/img/works/Velas.webp',
     slug: 'velas',
     name: 'Velas',
     tags: ['Brand Identity', 'Product Design ', 'Motion'],
+    isReady: false,
+  },
+  {
+    id: 10,
+    picture: '/img/works/Pancake.webp',
+    video: '/img/works/Pancake.webm',
+    slug: 'pancake',
+    name: 'Pancake',
+    tags: ['3D Motion', 'Illustration'],
     isReady: false,
   },
   {
@@ -110,6 +114,7 @@ export const allWorks = [
   {
     id: 13,
     picture: '/img/works/Tama.webp',
+    video: '/img/home/Tama.webm',
     slug: 'tama',
     name: 'Tama',
     tags: ['Product Design', 'Branding'],

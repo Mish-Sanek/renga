@@ -116,7 +116,7 @@ const page = () => {
             experiences.
           </p>
           <b className="about-team__members">
-            Imar Sagadeev, Nikolai Kharitonov, Tom Rumpf, Vlad Kursakov, Viсtor
+            Imar Sagadeev, Nikolai Kharitonov, Tom Rumpf, Vlad Kursakov, Viktor
             Shulskiy, Azis Manoukian, Zarema Bikmeeva, Marat Vahitov, Rostislav
             Volokitin, Dana Bakhtina, Artem Kovalenko, Alexander Minaev, Ignacio
             Ibarra, Renat Muratshin, Olya Magarik, Eduardo, Georgy Karellin,

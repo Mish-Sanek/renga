@@ -58,9 +58,7 @@
 /* features */
 
 .services-features {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -76,6 +74,8 @@
   flex-direction: column;
   gap: 120px;
   padding-top: 320px;
+  margin:  0 auto;
+  width: fit-content;
 }
 
 .services-features__item-title {
@@ -84,8 +84,10 @@
 }
 
 .services-features__item-descr {
+  max-width: 440px;
   margin-top: 32px;
   font-size: 20px;
+  color: #84858C;
 }
 
 .services-features__sublist {
@@ -115,10 +117,6 @@
 }
 
 @media (max-width: 767px) {
-  .services-features {
-    flex-direction: column;
-    gap: 72px;
-  }
 
   .services-features__sticky {
     font-size: 20px;
@@ -126,6 +124,7 @@
 
   .services-features__list {
     padding-top: 0;
+    margin-top: 72px;
     gap: 72px;
   }
 

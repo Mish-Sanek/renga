@@ -1,19 +1,42 @@
-'use client';
-import ReactLenis from 'lenis/react';
-import React, { useEffect, useState } from 'react';
+"use client";
+import { ReactLenis, useLenis } from "lenis/react";
+import { useEffect, useState, useRef } from "react";
+import { usePathname } from "next/navigation";
 
-const ScrollContainer = ({children}) => {
+
+const ScrollReset = () => {
+  const pathname = usePathname();
+  const lenis = useLenis();
+  const prevPathname = useRef(pathname);
+
+  useEffect(() => {
+    if (!lenis) return;
+
+    const isWorkTabTransition =
+      prevPathname.current.startsWith("/work") && pathname.startsWith("/work");
+
+    if (!isWorkTabTransition) {
+      lenis.scrollTo(0, { immediate: true });
+    }
+
+    prevPathname.current = pathname;
+  }, [pathname, lenis]);
+
+  return null;
+};
+
+const ScrollContainer = ({ children }) => {
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const checkScreen = () => {
-      setIsDesktop(window.innerWidth >= 1024);
+      setIsDesktop(window.innerWidth >= 1280);
     };
 
     checkScreen();
-    window.addEventListener('resize', checkScreen);
+    window.addEventListener("resize", checkScreen);
 
-    return () => window.removeEventListener('resize', checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
   const scrollOptions = {
@@ -23,7 +46,7 @@ const ScrollContainer = ({children}) => {
     wheelMultiplier: 1,
     touchMultiplier: 2,
     infinite: false,
-    syncTouch: true
+    syncTouch: true,
   };
 
   if (!isDesktop) {
@@ -32,6 +55,7 @@ const ScrollContainer = ({children}) => {
 
   return (
     <ReactLenis root options={scrollOptions}>
+      <ScrollReset />
       {children}
     </ReactLenis>
   );

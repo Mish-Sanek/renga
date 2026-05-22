@@ -16,6 +16,7 @@ const WorksTabs = () => {
     {id: 'illustration', name: 'Illustration', path: '/work/illustration'},
     {id: '3D-motion', name: '3D Motion', path: '/work/3D-motion'},
     {id: 'campaign-design', name: 'Campaign Design', path: '/work/campaign-design'},
+    {id: 'ai-platforms', name: 'AI Platforms', path: '/work/ai-platforms'},
   ]
 
   return (
