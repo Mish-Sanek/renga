@@ -4,6 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import PageFooterBig from "@/components/PageFooterBig";
 import ScrollContainer from "@/components/ScrollContainer";
 import GetInTouchFixed from "@/components/GetInTouchFixed";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   metadataBase: new URL("https://renua.one"),
@@ -76,6 +77,7 @@ export default function RootLayout({ children }) {
             <GetInTouchFixed />
           </div>
         </ScrollContainer>
+        <SpeedInsights />
       </body>
       <GoogleAnalytics gaId="G-54E24VX7E5" />
       {/* <Script
