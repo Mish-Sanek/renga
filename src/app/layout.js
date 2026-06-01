@@ -92,6 +92,7 @@ export default function RootLayout({ children }) {
           __html: `(function(){ emailjs.init('XVlqzmwyk5p21XGJI'); })();`
         }}
       /> */}
+      <script src="https://analytics.ahrefs.com/analytics.js" data-key="ITQP3D4TW3xjYYQLj8EcNA" async></script>
     </html>
   );
 }
