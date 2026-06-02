@@ -30,7 +30,7 @@ const page = () => {
   return (
     <main className='works-content'>
       <h1 className='works-content__title'>
-        Selected work across AI, <br/>
+        Selected work across AI,
         fintech and digital products.
       </h1>
       <p className='works-content__descr'>A selection of recent projects across branding, product design and digital experiences for ambitious teams.</p>

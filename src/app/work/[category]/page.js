@@ -1,38 +1,45 @@
-import Works from "@/components/Works/Works";
 import WorksTabs from "@/components/Works/WorksTabs";
-import { allWorks, getWorksByCategory } from "@/lib/works";
-import React from "react";
+import Works from "@/components/Works/Works";
+import { allWorks, worksSeoConfig } from "@/lib/works";
 
-const categoryMap = {
-    "brand-identity": "Brand Identity",
-    "product-design": "Product Design",
-    "campaign-design": "Campaign Design",
-    "motion-design": "Motion Design",
-    "3D-motion": "3D Motion",
-    "web-design": "Web Design",
-    "illustration": "Illustration",
+export async function generateMetadata({ params }) {
+  const { category } = await params;
+  const seoData = worksSeoConfig[category];
+
+  if (!seoData) return {};
+
+  return {
+    title: seoData.metaTitle,
+    description: seoData.metaDescr,
+    keywords: seoData.keywords,
+    openGraph: {
+      title: seoData.metaTitle,
+      description: seoData.metaDescr,
+    },
   };
+}
 
-const page = async ({params}) => {
 
-  const resolvedParams = await params;
+const CategoryPage = async ({ params }) => {
+  const { category } = await params;
+  const seoData = worksSeoConfig[category];
 
-  const {category} = resolvedParams;
 
-  const worksList = getWorksByCategory(categoryMap[category])
+  if (!seoData) {
+    notFound();
+  }
+
+  const filteredWorks = allWorks.filter((work) => work.category === category);
 
   return (
     <main className="works-content">
-      <b className="works-content__title">Selected work</b>
-      <p className="works-content__descr">
-        A selection of recent projects across branding, product design and
-        digital experiences for ambitious teams.
-      </p>
+      <h1 className="works-content__title">{seoData.h1}</h1>
+      <p className="works-content__descr">{seoData.descr}</p>
 
       <WorksTabs />
-      <Works list={worksList} />
+      <Works list={filteredWorks} />
     </main>
   );
 };
 
-export default page;
+export default CategoryPage;

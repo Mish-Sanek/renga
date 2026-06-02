@@ -3,6 +3,7 @@
 }
 
 .works-content__title {
+  max-width: 825px;
   font-weight: 600;
   font-size: 56px;
 }
