@@ -151,7 +151,7 @@ const page = () => {
         <WorkDescription data={descriptionData} />
         <WorksTrippleGallery items={galleryItems1} />
         <WorkInsight
-          title={"Extending the platform beyond the interface."}
+          title={"Extending the platform beyond the interface"}
           descr={`The visual identity expanded across campaigns, product communication and digital touchpoints — creating a more recognizable ecosystem around the platform.`}
         />
         <WorksTrippleGallery items={galleryItems2} />
@@ -159,7 +159,7 @@ const page = () => {
         <WorksTrippleGallery items={galleryItems4} />
         <WorkSingleMedia item={galleryItem5} />
         <WorkInsight
-          title={"Built as a scalable visual system."}
+          title={"Built as a scalable visual system"}
           descr={`Typography, color and interface components were designed to move consistently across product and communication environments.`}
           isReversed={true}
         />
@@ -170,13 +170,13 @@ const page = () => {
         <WorksTrippleGallery items={galleryItems10} />
         <WorkSingleMedia item={galleryItem11} />
         <WorkInsight
-          title={"Designed around structure and accessibility."}
+          title={"Designed around structure and accessibility"}
           descr={`The interface system focused on hierarchy, read ability and modular interaction patterns across complex publishing workflows.`}
         />
         <WorksTrippleGallery items={galleryItems12} />
         <WorkSingleMedia item={galleryItem13} />
         <WorkInsight
-          title={"Publishing through a more contemporary lens."}
+          title={"Publishing through a more contemporary lens"}
           descr={` The final system combined branding, product design and motion into a unified platform experience built for modern digital publishing.`}
         />
         <WorkSingleMedia item={galleryItem14} />

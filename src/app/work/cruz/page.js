@@ -112,33 +112,33 @@ const page = () => {
         <WorkDescription data={descriptionData} />
         <WorksTrippleGallery items={galleryItems1} />
         <WorkInsight
-          title={"Building personality into finance."}
+          title={"Building personality into finance"}
           descr={`Typography, motion and illustration combined into a more distinctive financial identity across product and brand communication.`}
         />
         <WorksTrippleGallerySmall items={galleryItems2} />
         <WorkSingleMedia item={galleryItem3} />
         <WorkInsight
-          title={"Designed as a scalable visual system."}
+          title={"Designed as a scalable visual system"}
           descr={`A flexible identity built to move consistently across interfaces, campaigns and digital touchpoints.`}
         />
         <WorkSingleMedia item={galleryItem4} />
         <WorksDualHeightGallery items={galleryItems5} />
         <WorkSingleMedia item={galleryItemTerminal} />
         <WorkInsight
-          title={"Product-first interaction design."}
+          title={"Product-first interaction design"}
           descr={`Designed for speed, clarity and accessibility across mobile interactions.`}
         />
         <WorkSingleMedia item={galleryItem6} />
         <WorkSingleMedia item={galleryItem7} />
         <WorksTrippleGallery items={galleryItems8} />
         <WorkInsight
-          title={"Motion across the ecosystem."}
+          title={"Motion across the ecosystem"}
           descr={`A series of animated assets and visual systems extended the product language across campaigns, social media and digital experiences.`}
         />
         <WorkSingleMedia item={galleryItem9} />
         <WorkSingleMedia item={galleryItem10} />
         <WorkInsight
-          title={"Designed for modern financial culture."}
+          title={"Designed for modern financial culture"}
           descr={`The final system merged branding, motion and product design into a unified experience built for a younger digital audience.`}
         />
         <WorkSingleMedia item={galleryItem11} />

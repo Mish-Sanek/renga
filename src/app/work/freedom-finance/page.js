@@ -130,7 +130,7 @@ const page = () => {
         <WorkDescription data={descriptionData} />
         <WorksTrippleGallery items={galleryItems1} />
         <WorkInsight
-          title={"Simplifying financial interaction."}
+          title={"Simplifying financial interaction"}
           descr={`The product experience focused on accessibility, hierarchy and speed —
           helping users navigate complex financial tools more intuitively.`}
         />
@@ -138,21 +138,21 @@ const page = () => {
         <WorksTrippleGallery items={galleryItems3} />
         <WorkSingleMedia item={galleryItem4} />
         <WorkInsight
-          title={"Building a scalable visual system."}
+          title={"Building a scalable visual system"}
           descr={`We developed a visual identity designed to work seamlessly across interfaces, campaigns and digital communication.`}
         />
         <WorksTrippleGallery items={galleryItems5} isReversed={true} />
         <WorksTrippleGallery items={galleryItems6} isReversed={true} />
         <WorksTrippleGallerySmall items={galleryItems7} />
         <WorkInsight
-          title={"Motion across the ecosystem."}
+          title={"Motion across the ecosystem"}
           descr={`A series of campaign visuals and motion assets designed for product launches, outdoor placements and digital media.`}
         />
         <WorkSingleMedia item={galleryItem8} />
         <WorksTrippleRowGallery items={galleryItems9} />
         <WorksDoubleGallery items={galleryItems10} />
         <WorkInsight
-          title={`Designed for modern investing.`}
+          title={`Designed for modern investing`}
           descr={`The final system combined product, branding and motion into a unified financial experience built for scale.`}
         />
         <WorkSingleMedia item={galleryItem11} />

@@ -1,6 +1,7 @@
 import WorksTabs from "@/components/Works/WorksTabs";
 import Works from "@/components/Works/Works";
 import { allWorks, worksSeoConfig } from "@/lib/works";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
   const { category } = await params;
