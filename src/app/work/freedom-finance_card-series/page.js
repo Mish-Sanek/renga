@@ -24,9 +24,20 @@ export const metadata = {
 
   openGraph: {
     title: "Freedom Finance Card Series — Fintech Card Design & 3D Visuals | Renua",
-
     description:
       "A premium fintech card series combining branding, materials and cinematic 3D visuals.",
+
+    url: "https://renua.one/work/freedom-finance_card-series",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Freedom Finance Card Series — Fintech Card Design & 3D Visuals by Renua",
+      },
+    ],
   },
 };
 

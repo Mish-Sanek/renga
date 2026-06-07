@@ -7,7 +7,6 @@ import WorksDualHeightGallery from "@/components/Works/WorksDiagonalGallery";
 import WorkSingleMedia from "@/components/Works/WorkSingleMedia";
 import WorksTrippleGallery from "@/components/Works/WorksTrippleGallery/WorksTrippleGallery";
 import WorksTrippleGallerySmall from "@/components/Works/WorksTrippleGallerySmall/WorksTrippleGallerySmall";
-import React from "react";
 
 export const metadata = {
   title: "Cruz — Fintech App Branding & Product Design | Renua",
@@ -26,9 +25,20 @@ export const metadata = {
 
   openGraph: {
     title: "Cruz — Fintech App Branding & Product Design | Renua",
-
     description:
       "A mobile fintech experience combining product design, motion systems and expressive visual identity.",
+
+    url: "https://renua.one/work/cruz",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Cruz — Fintech App Branding & Product Design by Renua",
+      },
+    ],
   },
 };
 

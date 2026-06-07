@@ -25,9 +25,20 @@ export const metadata = {
 
   openGraph: {
     title: "LooksRare — NFT Marketplace Product Design & Branding | Renua",
-
     description:
       "A digital marketplace experience combining branding, UI systems and motion design.",
+
+    url: "https://renua.one/work/looksrare",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "LooksRare — NFT Marketplace Product Design & Branding by Renua",
+      },
+    ],
   },
 };
 

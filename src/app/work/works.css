@@ -153,6 +153,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px 20px;
+    margin-top: 36px;
   }
 
   .works-list {

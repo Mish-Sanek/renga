@@ -25,9 +25,20 @@ export const metadata = {
 
   openGraph: {
     title: "Vodafone — Brand Campaign & Illustration System | Renua",
-
     description:
       "A large-scale illustration and campaign system for digital and outdoor communication.",
+
+    url: "https://renua.one/work/vodafone",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Vodafone — Brand Campaign & Illustration System by Renua",
+      },
+    ],
   },
 };
 

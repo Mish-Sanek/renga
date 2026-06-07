@@ -28,9 +28,20 @@ export const metadata = {
 
   openGraph: {
     title: "NVO — Trading Platform Product Design & Branding | Renua",
-
     description:
       "A high-performance trading platform combining product systems and digital brand identity.",
+
+    url: "https://renua.one/work/nvo",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "NVO — Trading Platform Product Design & Branding by Renua",
+      },
+    ],
   },
 };
 

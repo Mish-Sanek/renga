@@ -164,7 +164,7 @@ const LastProjects = ({
           }
         </Link>
       </nav>
-      <CommonLink url='/works'>
+      <CommonLink url='/work'>
         See more works ↗
       </CommonLink>
     </section>

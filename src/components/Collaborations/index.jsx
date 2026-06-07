@@ -5,7 +5,7 @@ import CommonLink from "../CommonLink";
 const collaborationsList = [
   {
     categoryName: "Fintech",
-    categorySlug: "",
+    categorySlug: "/work",
     items: [
       {
         name: "Freedom Finance KZ",
@@ -24,7 +24,7 @@ const collaborationsList = [
   },
   {
     categoryName: "AI Products",
-    categorySlug: "",
+    categorySlug: "/work",
     items: [
       {
         name: "Ape Ai",
@@ -44,7 +44,7 @@ const collaborationsList = [
   },
   {
     categoryName: "Blockchain",
-    categorySlug: "",
+    categorySlug: "/work",
     items: [
       {
         name: "Eclipse.xyz",
@@ -99,7 +99,7 @@ const collaborationsList = [
   },
   {
     categoryName: "Global Brands",
-    categorySlug: "",
+    categorySlug: "/work",
     items: [
       {
         name: "Ford",

@@ -26,9 +26,20 @@ export const metadata = {
 
   openGraph: {
     title: "Freedom Finance — Fintech Product Design & Branding | Renua",
-
     description:
       "A fintech product experience combining branding, motion systems, digital interfaces and 3D visual storytelling.",
+
+    url: "https://renua.one/work/freedom-finance",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Freedom Finance — Fintech Product Design & Branding by Renua",
+      },
+    ],
   },
 };
 

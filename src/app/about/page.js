@@ -31,9 +31,21 @@ export const metadata = {
 
   openGraph: {
     title: "About Renua",
-
     description:
       "Independent digital design studio creating brands, products and digital experiences for technology companies.",
+
+
+    url: "https://renua.one/about",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "About Renua — Digital Design Studio for AI, Fintech & SaaS",
+      },
+    ],
   },
 };
 
@@ -104,7 +116,9 @@ const page = () => {
               SaaS Platforms <br />
               Blockchain
             </b>
-            <CommonLink url="">Explore Industries ↗</CommonLink>
+            <CommonLink url="">
+              Explore Industries ↗
+            </CommonLink>
           </div>
           <div className="about-studio__categories">
             <b>
@@ -113,7 +127,9 @@ const page = () => {
               Motion & 3D <br />
               Web Experiences
             </b>
-            <CommonLink url="">Explore Services ↗</CommonLink>
+            <CommonLink url="">
+              Explore Services ↗
+            </CommonLink>
           </div>
         </div>
       </section>

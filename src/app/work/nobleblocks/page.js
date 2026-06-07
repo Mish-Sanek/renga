@@ -23,9 +23,20 @@ export const metadata = {
 
   openGraph: {
     title: "Nobleblocks — Blockchain Publishing Platform Design | Renua",
-
     description:
       "A blockchain publishing platform designed for scalable scientific publishing systems.",
+
+    url: "https://renua.one/work/nobleblocks",
+    siteName: "Renua",
+    type: "website",
+    images: [
+      {
+        url: "https://renua.one/Renua_Preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Nobleblocks — Blockchain Publishing Platform Design by Renua",
+      },
+    ],
   },
 };
 

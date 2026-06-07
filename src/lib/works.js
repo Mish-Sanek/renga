@@ -76,7 +76,7 @@ export const allWorks = [
     slug: "pancakeswap",
     name: "Pancakeswap",
     tags: ["Product Design", "Branding", "Motion"],
-    isReady: true,
+    isReady: false,
   },
   {
     id: 9,
@@ -155,13 +155,18 @@ export const allWorks = [
 ];
 
 export function getWorksByCategory(category) {
-  if (category === "all") {
+  if (!category || category === "all") {
     return allWorks;
   }
 
-  console.log(category);
+  const cleanCategory = category.toLowerCase().replace(/[^a-z0-9]/g, "");
 
-  return allWorks.filter((item) => item.tags.includes(category));
+  return allWorks.filter((item) => {
+    return item.tags.some((tag) => {
+      const cleanTag = tag.toLowerCase().replace(/[^a-z0-9]/g, "");
+      return cleanTag === cleanCategory;
+    });
+  });
 }
 
 export const worksSeoConfig = {

@@ -71,7 +71,7 @@ const HomeWorks = () => {
           additionalClass="works__list-item--big"
         />
       </div>
-      <CommonLink url='/works'>
+      <CommonLink url='/work'>
         See more works ↗
       </CommonLink>
     </section>
