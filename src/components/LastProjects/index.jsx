@@ -4,6 +4,7 @@ import Link from "next/link";
 import BorderedTitle from "../BorderedTitle/BorderedTitle";
 import FollowCursor from "../FollowCursor";
 import CommonLink from "../CommonLink";
+import LazyVideo from "../LazyVideo";
 
 const variants = [
   {
@@ -125,14 +126,7 @@ const LastProjects = ({
             <b>{smallData.title}</b>
             <span>{smallData.descr}</span>
           </div>
-          <video
-            src={smallData.videoUrl === "" ? null : smallData.videoUrl}
-            poster={smallData.posterUrl}
-            autoPlay
-            playsInline
-            muted
-            loop
-          />
+          <LazyVideo src={smallData.videoUrl} poster={smallData.posterUrl}  />
           {
             smallData.link === '' && <FollowCursor>Soon</FollowCursor>
           }
@@ -151,14 +145,7 @@ const LastProjects = ({
             <b>{bigData.title}</b>
             <span>{bigData.descr}</span>
           </div>
-          <video
-            src={smallData.videoUrl === "" ? null : smallData.videoUrl}
-            poster={bigData.posterUrl}
-            autoPlay
-            playsInline
-            muted
-            loop
-          />
+          <LazyVideo src={bigData.videoUrl} poster={bigData.posterUrl} />
           {
             bigData.link === '' && <FollowCursor>Soon</FollowCursor>
           }
