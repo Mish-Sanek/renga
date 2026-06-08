@@ -22,7 +22,7 @@ const LazyVideo = ({ src, poster, className = '', }) => {
           video.pause();
         }
       },
-      { rootMargin: '0px', threshold: 0 }
+      { rootMargin: '300px', threshold: 0 }
     );
 
     observer.observe(video);
