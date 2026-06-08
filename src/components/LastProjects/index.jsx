@@ -64,7 +64,7 @@ const variants = [
     bgColor: "#97F574",
     textColor: "#0D0D0D",
     posterUrl: "/img/last-projects/looksrare-poster.jpg",
-    videoUrl: "/img/last-projects/",
+    videoUrl: "",
     link: '/work/looksrare',
   },
   {
