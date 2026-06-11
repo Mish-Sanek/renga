@@ -112,6 +112,7 @@ const LastProjects = ({
       <nav className={navClassName}>
         <Link
           href={smallData.link !== '' ? smallData.link : '#'}
+          scroll={true}
           className={
             styles.lastProjects__item +
             " " +
@@ -133,6 +134,7 @@ const LastProjects = ({
         </Link>
         <Link
           href={bigData.link !== '' ? bigData.link : '#'}
+          scroll={true}
           className={
             styles.lastProjects__item + " " + styles["lastProjects__item--big"]
           }
